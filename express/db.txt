@@ -1,0 +1,5 @@
+create table if not exists subcategory(
+subid int(2) not null primary key auto_increment,
+subname varchar(20),
+cid int(2)
+)default charset=utf8;

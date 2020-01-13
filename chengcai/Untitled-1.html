@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// const a=[]
+// for(let i=0;i<10;i++){
+//     a.push(function(){
+//         console.log(i)
+//     })
+// }
+// a[0]();
+// console.log(typeof {} ==='object')
+// console.log([1,2,3] ==[1,2,3])
+var arr=[1,2,3,4]
+for(let i=0;i<arr.length;i++){
+  for (let j = i+1; j < arr.length; j++) {
+      if(arr.indexOf(arr[i]+arr[j],0)!==-1){
+          console.log(true)
+      }
+  }
+}
+
+</script>

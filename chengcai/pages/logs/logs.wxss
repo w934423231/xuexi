@@ -1,0 +1,124 @@
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
+.box{
+  width:100vw;
+  height:92vh;
+  display: flex;
+  margin-top: 10px;
+}
+.boxleft{
+  width:30vw;
+  height: 92vh;
+  border: 1px solid black;
+  box-sizing: border-box;
+  text-align: center;
+}
+.putong{
+  width:100%;
+  font-size:30.46875rpx;
+  color: black;
+  margin:20px 0px;
+
+}
+.putongs{
+  width:100%;
+  height:46.875rpx;
+  font-size:30.46875rpx;
+  color: red;
+  border-left: 3px solid red;
+  box-sizing: border-box;
+  margin:20px 0px;
+}
+.boxright{
+  width:70vw;
+  height: 92vh;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.box-content{
+   width:100%;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.box-content view{
+  width:164.0625rpx;
+  height:281.25rpx;
+  margin-top: 10px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden
+}
+.box-content image{
+  width:117.1875rpx;
+  height:117.1875rpx;
+}
+.box-content text{
+ font-size: 13px;
+}
+.weui-icon-search {
+  margin-right: 8px;
+  font-size: inherit;
+}
+
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.weui-search-bar__form {
+  width: 95vw;  
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+  background: #fff;
+  border: 1rpx solid #e6e6ea;
+  margin: 0px auto;
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  height: 65.625rpx;
+  line-height: 65.625rpx;
+  font-size: 32.8125rpx;
+}
+
+.weui-icon-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 8px;
+  font-size: 0;
+}
+.weui-search-bar__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 3px;
+  text-align: center;
+  color: #9b9b9b;
+  background: #fff;
+  line-height: 28px;
+}
+.weui-search-bar__cancel-btn {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #DC3C24;
+  white-space: nowrap;
+}

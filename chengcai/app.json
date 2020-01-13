@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/callback/callback",
+    "pages/gouwuche/gouwuche",
+    "pages/xiangqing/xiangqing",
+    "pages/dingdan/dingdan",
+    "pages/site/site",
+    "pages/wode/wode",
+    "pages/dingdanye/dingdanye",
+    "pages/celiang/celiang",
+    "pages/anzhuang/anzhuang",
+    "pages/fangan/fangan",
+    "pages/wodequan/wodequan",
+    "pages/shouchang/shouchang",
+    "pages/jiangjin/jiangjin",
+    "pages/zhongxin/zhongxin",
+    "pages/guanjia/guanjia",
+    "pages/women/women",
+    "pages/shezhi/shezhi",
+    "pages/login/login",
+    "pages/zuche/zuche"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "成才小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "sitemapLocation": "sitemap.json"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/gouwuche/gouwuche",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

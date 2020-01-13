@@ -1,0 +1,132 @@
+/* pages/dingdan/dingdan.wxss */
+page{
+    background-color: #dddddd;
+}
+.top{
+    width:100vw;
+    height: 15vh;
+    border-bottom: 4.6875rpx solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0px 23.4375rpx;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.dizhi{
+    width:72vw;
+    height:15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around
+}
+.dizhi view{
+    width:72vw;
+    height:8vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.dizhi view text{
+    font-size: 13px;
+    margin-right:10rpx;
+}
+.name{
+    font-weight: bold
+}
+.morn{
+    color: red;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid red;
+    padding: 2px 5px;
+}
+.font{
+    font-size: 20px;
+    font-weight: bold;
+}
+.content{
+    width:100vw;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.fonts{
+    width: 100vw;
+    height:3vh;
+    line-height: 3vh;
+    border-left: 3px solid red;
+    text-indent: 10px;
+    font-weight: bold;
+}
+.fons{
+    width: 100vw;
+    height:20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fons image{
+    width:187.5rpx;
+    height:187.5rpx;
+}
+.fons>view{
+    width:65vw;
+    height:15vh;
+    margin-left: 23.4375rpx;
+
+}
+.fons>view>view{
+    width:100%;
+    height:7vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 23.4375rpx;
+    box-sizing: border-box;
+}
+.fontss{
+    width:100%;
+    height:7vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 23.4375rpx;
+    box-sizing: border-box;
+}
+.fon1{
+    font-size: 13px;
+}
+.fon2{
+    font-size: 12px;
+    color: #c0c0c0;
+}
+.bottom{
+    width: 100vw;
+    height:8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #fff;
+}
+.bottom text{
+    margin-left:20px;
+}
+.bottom view{
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,43 @@
+/* pages/order/order.wxss */
+.orderdata{
+    width:100%;
+    height:180rpx;
+    /* background-color:black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom:20rpx;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20rpx;
+    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+}
+.orderdata .ordername{
+    /* width:65%; */
+    height:180rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.orderdata .ordertime{
+    /* width:25%; */
+    height:180rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ordername view{
+    font-size:34rpx
+}
+.ordertime view{
+    font-size:30rpx
+}
+.red{
+    color:red
+}
+.font{
+    font-size: 36rpx;
+    font-weight: bold;
+
+}

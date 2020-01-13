@@ -1,0 +1,54 @@
+<view class="wraper">
+
+	<view class="listItems">
+		<text class="listLeft">收货人姓名: </text>
+		<input
+		 id="name"
+		 class="listRight"
+		 type="number"
+		 bindblur="addressname"
+		/>
+	</view>
+
+	<view class="listItems">
+		<text class="listLeft">手机号码: </text>
+		<input
+		 id="name"
+		 class="listRight"
+		 type="number"
+		 bindblur="addressiphone"
+		/>
+	</view>
+
+	<view class="listItems">
+		<text class="listLeft">所在地区: </text>
+		<input
+		 id="name"
+		 class="listRight"
+		 type="number"
+         value="{{address}}"
+		 bindtap="address"
+		/>
+	</view>
+	<view class="listItems">
+		<text class="listLeft">性别: </text>
+		<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+			<text>{{array[index]}}</text>
+		</picker>	
+	</view>
+	<view class="listItems">
+		<text class="listLeft">详细地址: </text>
+		<input
+		 id="name"
+		 class="listRight"
+		 type="number"
+		 bindblur="detailedaddress"
+		/>
+
+	</view>
+
+	<view class="btnGroup">
+		<button class="btn" bindtap="submit">确认添加</button>
+	</view>
+</view>
+

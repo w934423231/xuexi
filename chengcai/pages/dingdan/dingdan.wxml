@@ -1,0 +1,44 @@
+<!--pages/dingdan/dingdan.wxml-->
+<view class="top">
+	<view class="dizhi" bindtap="tioazuan">
+		<view>
+            <text class="name">{{pitchsite.name}}</text>
+            <text>{{pitchsite.tel}}</text>
+		</view>
+		<view>
+			<text class="{{pitchsite.check?'morn':''}}">{{pitchsite.check?'默认':''}}</text>
+            <text>{{pitchsite.address}}</text>
+		</view>
+	</view>
+	<view class="font">></view>
+</view>
+<view class="content">
+    <view class="fonts">商品信息</view>
+    <view class="fons">
+        <image src='{{shuju[0].pics}}'></image>
+        <view>
+            <view><text>{{shuju[0].showName}}</text><text>{{shuju[0].price}}</text></view>
+            <view><text>{{shuju[0].cateid}}</text><text>X{{shuju[0].num}}</text></view>
+        </view>
+    </view>
+</view>
+<view class="content">
+    <view class="fonts">配送信息</view>
+    <view class="fontss"><text class="fon1">123</text><text class="fon2">123</text></view>
+</view>
+<view class="content">
+    <view class="fonts">优惠信息</view>
+    <view class="fontss"><text class="fon1">123</text><text class="fon2">123</text></view>
+</view>
+<view class="content">
+    <view class="fonts">订单信息</view>
+    <view class="fontss"><text class="fon1">商品总价</text><text class="fon2">{{shuju[0].price*shuju[0].num}}元</text></view>
+    <view class="fontss"><text class="fon1">配送费用</text><text class="fon2">+0元</text></view>
+    <view class="fontss"><text class="fon1">订单总价</text><text class="fon2">{{shuju[0].price*shuju[0].num}}元</text></view>
+    <view class="fontss"><text class="fon1">需付款</text><text class="fon2">{{shuju[0].price*shuju[0].num}}元</text></view>
+</view>
+<view class="content" style="margin-bottom:60px">
+    <view class="fonts">发票</view>
+    <view class="fontss"><text class="fon1">申请开具发票，请联系服务管家</text><text class="fon2"></text></view>
+</view>
+<view class="bottom"><text>合计:{{shuju[0].price*shuju[0].num}}元</text><view bindtap='submit'>支付</view></view>

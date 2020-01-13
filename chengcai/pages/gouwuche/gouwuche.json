@@ -1,0 +1,8 @@
+{
+ "usingComponents": {
+  "van-checkbox": "/vant-weapp/lib/checkbox/index",
+  "van-checkbox-group": "/vant-weapp/lib/checkbox-group/index",
+  "van-button": "/vant-weapp/lib/button/index",
+  "van-stepper": "/vant-weapp/lib/stepper/index"
+}
+}

@@ -1,0 +1,79 @@
+/* pages/ DistributionAM/ DistributionAM.wxss */
+page{
+    background-color:rgba(233, 233, 233, 0.966);
+}
+.box{
+    width:100%;
+    height:88vh;
+    background-color: #fff;
+}
+.address{
+    width: 100%;
+    height:150rpx;
+    border-bottom:1px solid gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 30rpx;
+    box-sizing: border-box;
+}
+.address>view:first-child{
+    width:80%;
+    height:130rpx;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+.address>view:first-child view{
+    width:100%;
+    height:40rpx;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+.address>view:first-child>view:first-child{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.fontstyle1{
+    color: gray;
+    font-size:30rpx;
+}
+.fontstyle2{
+    font-size:38rpx
+}
+.bianji{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    line-height:25px;
+}
+.apendaddress{
+    width:100%;
+    height:10vh;
+    background-color:white;
+    margin-top:2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.apendaddress>view{
+    width:30%;
+    height:80rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center
+}
+.icon{
+    font-size:60rpx;
+    color: orange;
+    margin-right:10rpx;
+}

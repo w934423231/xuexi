@@ -1,0 +1,6 @@
+<!--pages/dingdan/site/site.wxml-->
+<view class='site' wx:for='{{site}}' wx:key='{{index}}'>
+    <text>{{item.name}} {{item.tel}}</text>
+    <text>{{item.address}}</text>
+    <view bindtap='back' data-idx='{{index}}'>{{item.defaul}}</view>
+</view>

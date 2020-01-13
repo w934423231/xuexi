@@ -1,0 +1,77 @@
+<!--pages/Nearbystore/Nearbystore.wxml-->
+<view class="text">
+	最近门店
+</view>
+<view
+ class="box"
+ wx:for="{{Nstore}}"
+ wx:for-index="index"
+ wx:for-item="item"
+ data-index='{{index}}'
+ bindtap="selectstore"
+>
+	<view class="connet-box">
+		<view>
+			<view>
+				{{item.title}}
+			</view>
+			<view>
+				{{item.address}}
+			</view>
+		</view>
+		<view>
+			<view wx:if="{{item.distance&&item.distance<999}}">
+				距您{{item.distance}}m
+			</view>
+			<view wx:if="{{item.distance&&item.distance>1000}}">
+				距您{{item.distance/1000}}km
+			</view>
+			<view wx:if="{{!item.distance}}">
+				
+			</view>
+			<view wx:if="{{index==pageindex}}">
+				﹀
+			</view>
+			<view wx:if="{{index!==pageindex}}">
+				︿
+			</view>
+		</view>
+	</view>
+	<view class="bottom-box" wx:if="{{index==pageindex}}">
+		<view bindtap="order">
+			选择餐品
+		</view>
+	</view>
+</view>
+<view class="foot">
+	<view>
+		<view class="sousuo">
+			<view class="iconfont icon-chazhao icon" />
+			<input type="text" placeholder='请输入门店名称' placeholder-class="font" bindblur='seachername' value="{{value}}"></input>
+		</view>
+		<view class="buttonsousuo" bindtap="seach">
+			搜索
+		</view>
+	</view>
+	<view>
+		<picker
+		 mode="region"
+		 bindchange="bindRegionChange"
+		 value="{{region}}"
+		 custom-item="{{customItem}}"
+		>
+			<view class="pickr">
+				<view wx:for="{{region}}" class="pickr-item">
+					<view>
+                        {{item}}
+                    </view>
+                    <view>
+                        ﹀
+                    </view>
+				</view>
+			</view>
+		</picker>
+	</view>
+
+</view>
+

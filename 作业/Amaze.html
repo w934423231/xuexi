@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Amaze.css">
+</head>
+<body>
+    <div class="top">
+        <ul>
+            <li>web组件</li>
+            <li>js插件</li>
+            <li>css</li>
+            <li>开始使用</li>
+        </ul>
+    </div>
+    <div class="banner">
+        <div class="banner_01">
+            <div class="img nihao" id="img">
+                <img src="images/mascot.png" alt="">
+            </div>
+            <div class="amz-hero-intro">
+                <h1>Amaze ~ 妹子 UI</h1>
+                <h2>中国首个开源 HTML5 跨屏前端框架</h2>
+                <h3>期待你的参与，共同打造一个简单易用的前端框架!</h3>
+                <button>开始使用</button><button>贡献代码</button>
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="service_01">
+            <p>2015-01-13 | Amaze UI v2.1.0 正式版</p>
+            <div>
+                <input type="text" placeholder="请输入 Email">
+                <button>订阅更新</button>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="news">
+            <div class="hot">
+                <div>
+                    <img src="images/foundation.png" alt="">
+                    <h4>为移动而生</h4>
+                    <p>Amaze UI 以移动优先（Mobile first）为理念，从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。</p>
+                </div>
+                <div>
+                    <img src="images/foundation.png" alt="">
+                    <h4>为移动而生</h4>
+                    <p>Amaze UI 以移动优先（Mobile first）为理念，从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。</p>
+                </div>
+            </div>
+            <div class="hot">
+                <div>
+                    <img src="images/foundation.png" alt="">
+                    <h4>为移动而生</h4>
+                    <p>Amaze UI 以移动优先（Mobile first）为理念，从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。</p>
+                </div>
+                <div>
+                    <img src="images/foundation.png" alt="">
+                    <h4>为移动而生</h4>
+                    <p>Amaze UI 以移动优先（Mobile first）为理念，从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="msg">
+        <div class="msg_one">
+            <div class="msg_top">
+                <h1>
+                    站在巨人的肩膀上
+                </h1>
+                <h2>
+                    Amaze UI 汲取了很多优秀的社区资源，通过开源的形式来回馈社区。
+                </h2>
+            </div>
+            <div class="msg_footer">
+                <div>
+                    <h2>MIT License</h2>
+                    <p>Amaze UI 使用 MIT 许可证发布，用户可以自由使用、复制、修改、合并、出版发行、散布、再授权及贩售 Amaze UI 及其副本。</p>
+                </div>
+                <div>
+                    <h2>MIT License</h2>
+                    <p>Amaze UI 使用 MIT 许可证发布，用户可以自由使用、复制、修改、合并、出版发行、散布、再授权及贩售 Amaze UI 及其副本。</p>
+                </div>
+                <div>
+                    <h2>MIT License</h2>
+                    <p>Amaze UI 使用 MIT 许可证发布，用户可以自由使用、复制、修改、合并、出版发行、散布、再授权及贩售 Amaze UI 及其副本。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_content">
+            <div class="footer_left">
+                <p>妹子招亲 | 联系我们 | 品牌相关</p>
+                <span>© 2015 AllMobilize, Inc. Licensed under MIT license. Developed with WebStorm.</span>
+            </div>
+            <div class="footer_right">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    window.onload=window.onresize=window.onwheel=function(){
+        if(document.documentElement.scrollTop<300){
+           console.log(img.className)
+          img.className='img img1'
+        }else{
+            img.className='img'
+        }
+    }
+    function f1()
+{
+    var N = 0; // N是f1函数的局部变量
+    console.log('1:'+N)
+    function f2() // f2是f1函数的内部函数，是闭包
+    {   
+        console.log('2:'+N)
+        N += 1; // 内部函数f2中使用了外部函数f1中的变量N
+        console.log('3:'+N);
+    }
+    return f2;
+}
+var result = f1();
+console.log
+result(); // 输出1
+ f1();
+result(); // 输出2
+result(); // 输出3
+
+    // window.onload=window.onresize=function(){
+    //     deviceWidth = document.documentElement.clientWidth > 1366 ? 1366 : document.documentElement.clientWidth
+    // document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + deviceWidth / 13.66 + 'px !important'
+    // }
+</script>

@@ -1,0 +1,17 @@
+<!--pages/dingdanye/dingdanye.wxml-->
+<view class="top">
+    <view wx:for="{{shuju}}" class="{{item.check?'red':''}}" data-index="{{index}}" bindtap='dingdanye'>{{item.names}}</view>
+</view>
+<scroll-view class="body" scroll-y="true">
+<view class="box" wx:for="{{dingdanshuju}}">
+		<image class="image" src="{{item.pics}}" />
+		<view class="font">
+			<text>商品名称：{{item.pname}}</text>
+			<text>单价:{{item.sprice}}元</text>
+			<view class="jiage">
+				<view class="qian">总价:{{item.oprice}}元</view>
+        <view class='num'>商品数量:{{item.onum}}件</view>     
+			</view>
+		</view>
+	</view>
+</scroll-view>

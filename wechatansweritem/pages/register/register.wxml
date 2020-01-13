@@ -1,0 +1,29 @@
+
+ <form class='box'>
+    <view class="" hover-class="none" hover-stop-propagation="false">
+        <text>用户名:</text><input type="text" placeholder='请输入用户名' bindblur="yonghu"/>
+    </view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      性别: <text class="prickerborder">{{array[index]}}</text>
+    </view>
+  </picker>
+    <view class="" hover-class="none" hover-stop-propagation="false">
+        <text>账号:</text><input type="text" placeholder='请输入手机号' bindblur="user"/>
+    </view>
+    <view class="" hover-class="none" hover-stop-propagation="false">
+        <text>密码:</text><input type="text" placeholder='请输入密码' password="true" bindblur="pwd" />      
+    </view>
+    <view class="" hover-class="none" hover-stop-propagation="false">
+        <text>密码:</text><input type="text" placeholder='请输入再次密码' password="true" bindblur="pwd1" />      
+    </view>
+  
+    <view class="bluebutton" hover-class="none" hover-stop-propagation="false">
+        <button class="but"  loading="{{loading}}" disabled="{{disabled}}" bindtap="zuche">
+            注册
+        </button>
+    </view>
+      
+ </form>
+  
+

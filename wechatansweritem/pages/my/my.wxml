@@ -1,0 +1,59 @@
+<view class="userlogn">
+	<view wx:if="{{userlogin.username}}">
+		<image src="{{'http://localhost:8000/updatapics/pics/'+userlogin.userimage}}" />
+		<view>{{userlogin.username}}</view>
+	</view>
+    <view wx:if="{{userlogin.username==null}}" bindtap="login">
+        前往登录
+    </view>
+</view>
+<view class="xinxiguanli" bindtap="usermessage">
+	<view>
+		<view class="iconfont icon-yonghu tubiao" />
+		<view class="font">
+			用户信息
+		</view>
+	</view>
+	<view class="fons">
+		〉
+	</view>
+</view>
+<view class="xinxiguanli" bindtap="Couponmanagement">
+	<view>
+		<view class="iconfont icon-coupon tubiao" />
+		<view class="font">
+			优惠券管理
+		</view>
+	</view>
+	<view class="fons">
+		〉
+	</view>
+</view>
+<view class="xinxiguanli" bindtap="DistributionAM">
+	<view>
+		<view class="iconfont icon-yiliaohangyedeICON- tubiao" />
+		<view class="font">
+			配送地址管理
+		</view>
+	</view>
+	<view class="fons">
+		〉
+	</view>
+</view>
+<view class="xinxiguanli" bindtap="InstructionsforUse">
+	<view>
+		<view class="iconfont icon-lingdang tubiao" />
+		<view class="font">
+			使用须知
+		</view>
+	</view>
+	<view class="fons">
+		〉
+	</view>
+</view>
+<view class="userout" wx:if="{{userlogin.username}}">
+	<view bindtap="removelogin">
+		退出登录
+	</view>
+</view>
+

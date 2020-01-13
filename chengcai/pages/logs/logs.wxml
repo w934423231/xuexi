@@ -1,0 +1,30 @@
+<view class="weui-search-bar__form">
+	<view class="weui-search-bar__box">
+		<icon class="weui-icon-search_in-box" type="search" size="14" />
+		<input
+		 type="text"
+		 class="weui-search-bar__input"
+		 placeholder="请输入查询内容"
+		 value="{{SearchData.value}}"
+		 bindinput='SearchInput'
+		 bindconfirm="SearchConfirm"
+		/>
+		<view class="weui-icon-clear" wx:if="{{SearchData.value.length > 0}}" bindtap="SearchClear">
+			<icon type="clear" size="14" />
+		</view>
+	</view>
+</view>
+<view class="box">
+	<scroll-view scroll-y="true" class="boxleft" scrollbars='none'>
+		<view class="{{idx===item.catename?'putongs':'putong'	}}" wx:for="{{boxleft}}" bindtap='catechange' data-idx='{{item.catename}}'>{{item.catename}}</view>
+	</scroll-view>
+	<scroll-view class="boxright" scroll-y="true">
+		<view class="box-content">
+			<view wx:for="{{boxright}}">
+				<image class="" src="{{item.pics}}" />
+				<text class="">{{item.showName}}</text>
+			</view>
+		</view>
+	</scroll-view>
+</view>
+

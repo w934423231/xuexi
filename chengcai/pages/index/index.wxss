@@ -1,0 +1,285 @@
+/**index.wxss**/
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+.top ul li{
+  font-size:12px;
+  margin-left:17px;
+}
+.banner{
+  width: 100vw;
+  height: 23vh;
+  margin-top:30px;
+  /* background:red; */
+}
+.banner image{
+  width:100%;
+  height: 23vh;
+}
+.biaoyu{
+ display: flex;
+ justify-content: space-between;
+ margin-top:5px;
+}
+.catelist{
+  width:100vw;
+  height:6vh;
+  top:0px;
+  position: fixed;
+  white-space: nowrap;
+  z-index:999999;
+  background-color: #fff; 
+}
+.catelists{
+  width:100vw;
+  height:100vh;
+  top:0px;
+  z-index:999999;
+  background-color: #fff;
+  /* border: 1px solid red; */
+}
+.cateitem{
+  display: inline-block;
+  padding:0 16rpx;
+  font-size:24rpx;
+}
+.cateitems{
+  display: inline-block;
+  padding:0 16rpx;
+  font-size:24rpx;
+  border: 1px solid red;
+}
+.xiala{
+  width:46.875rpx;
+  height:46.875rpx;
+  position: absolute;
+  display: inline-block;
+  top:4px;
+  right: 0px;
+  text-align: center;
+  z-index: 999999999999999;
+  background-color:white;
+  line-height: 46.875rpx;
+}
+.active{
+  color: red;
+  font-size:36rpx;
+}
+.actives{
+  color: red
+}
+.nav-t{
+  width:px;
+  display: inline-block;
+  font-size:28.125rpx;
+  color: red;
+ 
+}
+.nav-t image{
+  width: 23.4375rpx;
+  height: 23.4375rpx;
+}
+.main1{
+  width: 100vw;
+  height:30vh;
+  /*border:1px solid red;*/
+  overflow: hidden;
+  /*margin-top: 10px;*/
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.fenleibiao{
+  display: inline-block;
+  width:150rpx;
+  height:150rpx;
+  display: flex;
+  
+  flex-direction: column;
+  margin-top: 4.6875rpx;
+}
+.imgcal{
+  display: flex;
+ justify-content:center;
+}
+.imgcal image{
+  width: 105.46875rpx;
+  height:105.46875rpx;
+  border-radius: 50%;
+}
+.titcal{
+  font-size:35.15625rpx;
+  text-align: center;
+}
+.main2{
+  width:100vw;
+}
+.newpeoper{
+  position:absolute;
+  left:23.4375rpx;
+  font-weight: bold
+}
+.genduo{
+ position: absolute;
+ right:23.4375rpx;
+ font-size:13px;
+ color:gray;
+}
+.newlibao{
+  width:100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items:baseline;
+  flex-wrap: wrap;
+}
+.newlibao view{
+  width:40vw;
+  height:234.375rpx;
+  border-radius:46.875rpx;
+  margin-top: 20px;
+}
+.shengqian{
+  margin-left:23.4375rpx;
+  font-weight:bold;
+}
+.shenqian{
+  /*width:100vw;*/
+  height:20vh;
+  display: flex;
+ justify-content: space-around;
+ flex-direction: row;
+  flex-wrap: nowrap;  
+}
+.shenqian1{
+  width:234.375rpx;
+  height:117.1875rpx;
+  display: inline-block;
+  flex-direction: column;
+}
+.status{
+  width: 90%;
+  height: 40vh;
+  margin: 0 auto;
+}
+.status_01{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.status_02{
+  width: 100%;
+  height: 30vh;
+}
+.status_02 view{
+  display:inline-block;
+  width: 35vw; 
+  height: 30vh;
+  margin-left: 50rpx;
+  text-align: center;
+}
+.status_02 view:nth-of-type(1){
+  margin-left: 0;
+}
+.status_02 view image{
+  width: 100%;
+  height: 20vh;
+}
+.status_02 view text{
+ white-space: normal;
+ font-size: 32rpx
+}
+.msg{
+  width: 90%;
+  height: 68vh;
+  margin: 0 auto;
+}
+.msg_01{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.msg_01 text:nth-of-type(1){
+  float: left;
+}
+.msg_01 text:nth-of-type(2){
+  float: right;
+  font-size: 28rpx;
+  color:#999;
+}
+.msg_02{
+  width: 100%;
+  height: 25vh;
+}
+.msg_02 image{
+  width: 100%;
+  height: 100%;
+}
+.msg_03{
+  width: 100%;
+  height: 30vh;
+  margin-top: 3vh;
+}
+.msg_03 view{
+  display:inline-block;
+  width: 35vw; 
+  height: 30vh;
+  margin-left: 50rpx;
+  text-align: center;
+}
+.msg_03 view:nth-of-type(1){
+  margin-left: 0;
+}
+.msg_03 view image{
+  width: 100%;
+  height: 20vh;
+}
+.msg_03 view text{
+ white-space: normal;
+ font-size: 32rpx
+}
+.brand{
+  width: 90%;
+  height: 50vh;
+  margin: 0 auto;
+}
+.brand_02{
+  display: flex;
+  height: 40vh;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.brand_02 view{
+  width: 30%;
+  height: 45%;
+  
+}
+.brand_02 image{
+  width: 100%;
+  height: 100%;
+}
+.return{
+  width: 80rpx;
+  height: 80rpx;
+  background: red;
+  position: fixed;
+  right: 0;
+  top:80vh;
+  z-index: 9999;
+}

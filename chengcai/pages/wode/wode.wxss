@@ -1,0 +1,113 @@
+.top{
+  width: 100%;
+  height:90px;
+  background:red;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.top view{
+  width: 200rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.top image{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  margin:20px 10px;
+}
+.top p{
+  font-size:16px;
+  margin-top: 30px;
+  float:left;
+}
+.top text{
+  font-size:14px;
+}
+.head{
+  width:100%;
+  height:120px;
+  background:pink;
+}
+.head image{
+width:46px;
+height:46px;
+border-radius:50%;
+margin:-5px 5px;
+}
+.nem{
+  font-size:10px;
+  margin:15px 8px;
+}
+.head1{
+  width:60px;
+  height:80px;
+  float:left;
+  /* background:red; */
+  margin-left:3px;
+  margin-top:6px;
+}
+.xinren{
+  height:30px;
+/* background:red; */
+}
+.xinren text{
+  font-size:16px;
+  float:left;
+  width:80px;
+  height:30px;
+}
+.xinren a{
+  font-optical-sizing:16px;
+  color:#bbb;
+  float:right;
+}
+.nav{
+  height:200px;
+  background:blue;
+}
+.nav image{
+width:46px;
+height:46px;
+border-radius:50%;
+margin:5px 5px;
+}
+.mene{
+  font-size:11px;
+  margin:-4px 8px;
+}
+.nav1{
+  width:60px;
+  height:80px;
+  float:left;
+  /* background:red; */
+  margin-left:16px;
+  margin-top:5px;
+}
+.header{
+  width:100%;
+  height:110px;
+  background:pink;
+}
+.header image{
+width:46px;
+height:46px;
+border-radius:50%;
+margin:-5px 5px;
+}
+.neem{
+  font-size:11px;
+  margin:15px 8px;
+}
+.header1{
+  width:60px;
+  height:80px;
+  float:left;
+  /* background:red; */
+  margin-left:3px;
+  margin-top:6px;
+}

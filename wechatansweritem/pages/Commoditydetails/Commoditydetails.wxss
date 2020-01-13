@@ -1,0 +1,458 @@
+                                                            /* pages/Commoditydetails/Commoditydetails.wxss */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.top {
+    width: 100%;
+    height: 260rpx;
+    background-color: #f5f1f2;
+    padding: 0px 20rpx;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.top>view:first-child {
+    width: 80%;
+    height: 200rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top>view:first-child image {
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 20rpx;
+    box-shadow: 2rpx 2rpx 10rpx 2rpx gray;
+}
+
+.top>view:first-child view:first-child {
+    font-size: 35rpx;
+    color: black;
+
+}
+
+.top>view:first-child view:last-child {
+    font-size: 25rpx;
+    color: gray;
+    margin-top: 20rpx;
+}
+
+.top>view:last-child {
+    width: 100%;
+    height: 60rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top swiper {
+    width: 85%;
+    height: 60rpx;
+}
+
+.top .swiperitem {
+    display: flex;
+    align-items: center;
+}
+
+.swiperitem>view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    padding: 3rpx 8rpx;
+    color: white;
+    font-size: 25rpx;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: red;
+}
+
+.bulue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.font {
+    margin-left: 20rpx;
+    font-size: 25rpx
+}
+
+.shopstore {
+    width: 100%;
+    height: 65vh;
+    background-color: #f5f1f2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.shopstore>view:first-child {
+    width: 30%;
+    height: 100%;
+
+}
+
+.shopstore>view:last-child {
+    width: 70%;
+    height: 100%;
+
+}
+
+.shopstore>view:last-child>scroll-view {
+    width: 100%;
+    height: 100%;
+
+}
+
+.navnamegray {
+    width: 100%;
+    height: 112rpx;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    color: gray;
+    background-color: #f5f1f2;
+    padding: 0px 5rpx;
+    box-sizing: border-box
+}
+
+.navnamewhite {
+    width: 100%;
+    height: 112rpx;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    color: black;
+    background-color: white;
+    padding: 0px 5rpx;
+    box-sizing: border-box
+}
+
+.shopdata {
+    width: 100%;
+    height: 200rpx;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20rpx;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(175, 174, 174);
+}
+
+.shopdata image {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 20rpx
+}
+
+.shopdata>view {
+    width: 65%;
+    height: 160rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopdata>view>view:last-child {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20rpx;
+}
+
+.shopdata>view>view:last-child>view:last-child {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopfont {
+    font-size: 35rpx;
+}
+
+.iconc {
+    font-size: 50rpx;
+    color: orange;
+}
+
+.foot {
+    width: 100%;
+    height: 13vh;
+    /* background-color:red; */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99999999999999;
+}
+
+.shopnum {
+    width: 40%;
+    font-size:30rpx;
+    color: gray;
+}
+
+.icong {
+    color: white;
+    font-size: 100rpx;
+    margin-left: 20rpx;
+    width:12vh;
+    height:12vh;
+    border-radius: 50%;
+    background:rgb(167, 167, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icono {
+    color: white;
+    font-size: 100rpx;
+    margin-left: 20rpx;
+    width:12vh;
+    height:12vh;
+    border-radius: 50%;
+    background:orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zhifug{
+    width:200rpx;
+    height:13vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.zhifuo{
+    width:200rpx;
+    height:13vh;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.zhifug>view{
+    font-size: 32rpx
+}   
+.zhifuo>view{
+    font-size: 32rpx
+}
+
+.num{
+    width:40rpx;
+    height: 40rpx;
+    background: red;
+    border-radius:50%;
+    position: relative;
+    left:-20rpx;
+    top:-20rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+.num1{
+    width:40rpx;
+    height: 40rpx;
+    border-radius:50%;
+    position: relative;
+    left:-10rpx;
+    top:-10rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+.navfont{
+    width:100%;
+    margin-left:10rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.shoppingbox{
+    width: 100vw;
+    height: 87vh;
+    position: absolute;
+    bottom: 13vh;
+    left: 0px;
+    background:rgba(0, 0, 0, 0.6);
+    z-index: 99;
+}
+.shopingmenban{
+    width:100vw;
+    height:40vh;
+    background-color: #fff;
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    display: flex;
+    flex-direction:column;
+    z-index: 9999;
+}
+.shopingmenban>view:nth-of-type(1){
+    width: 100vw;
+    height: 8vh;
+    background-color: #f5f1f2;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20rpx;
+    box-sizing: border-box;
+    align-items: center
+}
+.shopingmenban>view:nth-of-type(1)>text{
+    font-size: 32rpx;
+}
+.shopingmenban>view:nth-of-type(1)>view{
+    width:30vw;
+    height:6vh;
+    background: orange;
+    font-size:32rpx;
+    color: white;
+    text-align: center;
+    line-height:6vh;
+
+}
+.shopingmenban>view:nth-of-type(2){
+    width:100vw;
+    height:32vh; 
+}
+.shopingmenban>view:nth-of-type(2) scroll-view {
+    width:100vw;
+    height:32vh; 
+}
+.shoppingdatashuju{
+    width: 100vw;
+    height:80rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* background-color: blue; */
+    align-items: center;
+    padding: 0px 20rpx;
+    box-sizing: border-box;
+}
+.shoppingdatashuju>view:nth-of-type(2){
+   color: red;
+   /* margin-right:-200rpx; */
+}
+.shoppingdatashuju>view:nth-of-type(3){
+    width: 25vw;
+    height:80rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.shoppingprice{
+    color: red;
+    font-size:50rpx;
+}
+.coudan{
+    position: absolute;
+    width:100vw;
+    height:80rpx;
+    left:0px;
+    text-align: center;
+    line-height: 80rpx;
+    background: #e6a87f;
+    z-index: 9999999999999999999;
+}
+.position1{
+    bottom: 53vh;
+}
+.position2{
+    bottom:13vh;
+}
+.coudanred{
+    color: red;
+}
+.coudanshopdata{
+    width: 100vw;
+    height:40vh;
+    background-color: #fff;
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    display: flex;
+    flex-direction:column;
+    z-index: 9999;
+}
+.coudanshopdata>view:first-child{
+    width:100vw;
+    height:80rpx;
+    background-color: orange;
+    text-align: center;
+    line-height: 80rpx;
+    color: white;
+}
+.coudanshopdata>view:last-child{
+    width:100vw;
+    height:38vh;    
+}
+.coudandata{
+    width:100vw;
+    height:80rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20rpx;
+    box-sizing:border-box;
+}
+.coudanprice{
+    width:30vw;
+    height:80rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}

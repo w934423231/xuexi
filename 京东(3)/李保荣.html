@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* HTML:超文本标记语言，标准通用标记语言下的一个应用。 “超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。 超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。 */
+        /* <a href="http://www.w3school.com.cn">This is a link</a> */
+        /* <img src="w3school.jpg" width="104" height="142" /> */
+        /* 1999 html--- xhtml（xhtml可以理解成是html的加强版）====>xml
+2008 html 5.0 */
+/* <html>  
+    <head>  
+        <title>hello</title>  
+    </head>  
+    <body>  
+        Hello,word!  
+    </body>  
+</html>   */
+
+/* 1、块级标签：默认宽度100%（占满一行）；
+
+                          块级标签自动换行（独占一行，右边不能有任何东西）；
+
+                          可以使用css设置宽度高度    
+
+2、行级标签：默认宽度由内容撑开（内容多宽，宽度就占多宽）；
+
+                          行级标签不会自动换行（一行当中，从左往右依次排列）；
+
+                          宽度高度不能设置 */
+/* 1.标题标签
+   h标签：标题标签，显示为黑体加粗
+   标题标签，共分为6种：h1-h6，h1最大，h6最小
+ 
+2.分割线标签
+   hr标签：表示一条水平线
+ 
+3.段落标签
+   p标签：表示段落标签，相当于我们文章中的一段文字
+ 
+4.换行标签
+   <br/>：换行符
+   注意：在代码中，直接回车换行，浏览器并不认识，必须使用<br/>告诉浏览器这里要断行
+ 
+5.预格式
+   pre标签：预格式标签。会保留代码中的空格，回车等符号，直接在浏览器显示
+   pre标签常用于在网页中显示代码，保留代码格式！！
+ 
+6.块引用标签<blockquote cite="http://www.baidu.com"></blockquote>
+   blockquote：块引用标签。表明一段话是从其他网站引用的
+   有一个重要属性：cite=""表示这段话的引用来源，常放一个网站地址，但是浏览器显示并没有任何区别 */
+/* 1、无序列表
+
+有多个列表项组成，每个列表项前面带小黑点，称为无序列表。
+
+无序列表用<ul>表示，列表中的每一项用<li>表示
+
+ 
+
+2.有序列表
+
+有序列表用<ol>表示，标签中的每个列表项用<li>表示
+
+ 
+
+3、定义列表（定义描述列表）
+
+定义列表<dl>，里面有一个标题<dt>，有多个描述项<dd>，
+
+标题默认顶格显示，描述项相对标题向后缩进显示。
+
+ 
+
+4、图片组合标签
+
+组合标签<figure>里面有两部分：
+
+①图片<img/>后续讲解
+
+②图片的标题<figcaption></figcaption>
+
+ 
+
+5、分区标签div（最常用标签）
+
+div标签没有任何的特殊作用，仅仅起到一个包裹内容的作用。常用于网页中划分区块
+
+div标签中可以包裹任何内容，需配合css一起使用 
+<body>
+        <ul>
+            <li>这是无序列表第一项</li>
+            <li>这是无序列表第二项</li>
+            <li>这是无序列表第三项</li>
+            <li>这是无序列表第四项</li>
+        </ul>
+        <ol>
+            <li>这是有序列表第一项</li>
+            <li>这是有序列表第二项</li>
+            <li>这是有序列表第三项</li>
+            <li>这是有序列表第四项</li>
+        <dl>
+            <dt>这是dl列表的标题</dt>
+            <dd>这是dl列表的描述项1</dd>
+            <dd>这是dl列表的描述项2</dd>
+            <dd>这是dl列表的描述项3</dd>        
+        </dl>
+        <figure>
+            <img src="img/icon.jpg"/>
+            <figcaption>图片的描述标题</figcaption>
+        </figure>
+        <div style="width:500px;height:100px;background-color:yellow ;">
+            这是div里面的文字
+            <p>11111</p>
+        </div> */
+/* 6.超链接标签a
+
+① href属性：表示超链接需要跳转的页面
+
+    a.可以写网络地址：
+
+       <a href="http://www.baidu.com">这是一个超链接</a>
+
+    b.可以打开本地html文件：
+
+       采用相对路径确定文件地址，与img标签确定方式相同
+
+       <a href="02-HTML-基本块级标签.html">这是一个超链接</a>   
+
+② title属性：鼠标指上后显示的提示文字
+
+    <a href="http://www.baidu.com"title="hhh">这是一个超链接</a>
+
+③ target属性：设置新页面打开的窗口位置
+
+    可选值：_self自身页面打开（默认）_blank新窗口打开
+
+    <a href="http://www.baidu.com"target="_blank">这是一个超链接</a>
+
+④ rel属性：声明即将跳转的文件与当前文件的关系
+
+     rel="prev":即将打开的页面是当前页面的前一篇；
+
+     rel="next":即将打开的页面是当前页面的后一篇
+
+     <a href="next.html"rel="next">下一篇文章</a>
+
+ 这个属性设置以后对用户没有任何作用，但多搜索引擎是友好的，搜索引擎在抓取网页时， 可以很清楚的知道网页中的上下文结构关系
+
+【超链接的特殊应用】
+
+1.功能性连接（了解）：
+
+          mailto://点击链接给指定邮箱发送邮件
+
+           <a href="mailto://jianghao@jrel.com">点击链接发封邮件</a>
+
+           tencent://message/?uin=251241143点击与指定QQ聊天
+
+还有：tell://手机端点击打电话
+
+          message://手机端点击发送短信
+
+          ftp://使用ftp协议进行文件的上传下载
+
+2.锚链接：
+
+>>>本页面锚链接
+
+①在页面的指定位置设置一个锚点，用name属性表示锚点的名字
+
+     <a name="top"></a>
+
+②将超链接的href属性，设置为#加锚点名字
+
+    <a href="#top">点击链接，跳转到top锚点位置</a>
+ >>>页面间锚链接
+
+①在新页面的指定位置设置一个锚点，用name属性表示锚点的名字
+
+     <a name="top"></a>
+
+②将超链接的href属性，设置为新页面地址#加锚点名字
+
+    <a href="text.html#top">点击链接，跳转到text.html的top锚点位置</a> */
+    /* <a name="top"></a>
+        江汉真<span style="color: red;font-size:48px ;">帅</span><br />
+        <em>这是em标签</em><br />
+        <strong>这是strong标签</strong><br />
+        <i>这是i标签</i><br />
+        <b>这是b标签</b><br />
+        <u>这是u标签</u><br />
+        <q cite="http://www.666666.com">我是q标签引用</q>
+        <blockquote>我是blockquote的引用</blockquote>
+        <cite>我是city标签的引用</cite><br />
+        <small>我比正常小一号</small><br />
+        <big>我比正常大一号</big><br />
+        <img src="https://www.baidu.com/img/bd_logo1.png"/>
+        <img src="img/icon.jpg"height=""width=""title="鼠标指上后看到的提示文字"alt="图片无法加载时看到的文字"align="bottom"/>12345
+        <img src="../icon.jpg" /><br />
+        <div style="height: 800px;background-color: red;"></div>
+        
+        <a href="http://www.baidu.com"title="hhh"target="_blank">这是一个超链接</a>
+        <a href="mailto://jianghao@jrel.com"title="hhh"target="_blank">点击链接发封邮件</a>
+        
+        <a href="#top">点击跳转到顶部！</a>
+        
+        <a href="img/text.html#one">点击跳到新页面第一部分</a>
+        <a href="img/text.html#two">点击跳到新页面第二部分</a>
+        <a href="img/text.html#three">点击跳到新页面第三部分</a>
+        <a href="img/text.html#four">点击跳到新页面第四部分</a> */
+
+/* （五）、表格
+
+表格用table表示，表格中的每一行用tr表示，一行中的每一列用td表示
+
+th:表示表头，表头中的文字默认为加粗居中，th要放在tr中，用于替换td
+table的常用属性
+
+1.border：给表格加边框。默认给所有td加边框，并且给整个table加外边框，当增大         border的值时，td上的边框不变化，只有最外层大边框变宽
+
+2.cellspacing：单元格与单元格之间的距离。
+
+【注意】表格边框线合并的css写法:
+
+style="border-collapse：collapse;"
+
+ 这条css与cellspacing="0"有什么区别？
+
+cellspacing="0"仅仅是将单元格之间的距离调整为0，实际上单元格之间依然还是两条线
+
+border-collapse：collapse；试讲表格相邻的两条边框进行合并处理，只有一条线存在
+
+   （一旦边框合并，collapse属性将会失效）
+
+3.cellpadding:单元格中的文字与单元格边框的距离  
+
+4.height:表格的高度
+
+   width:表格的宽度
+
+  使用表格宽高属性设置大小：
+
+   <table height="400"width="500"></table>
+
+   使用css样式设置大小：
+
+   <table style="height: 400px;width=500px"></table>
+
+5.align:设置表格在浏览器中的位置，不建议使用了。
+
+  可选值：left/center/right
+
+6.bgcolor:背景色
+
+   bordercolor：边框颜色
+
+   background：背景图
+
+   背景图和背景色同时存在时，背景图会覆盖背景色
+
+ 
+
+tr与td常用属性
+
+1.width：单元格宽度
+
+   height：单元格高度
+
+2.bgcolor：单元格颜色
+
+3.align：设置单元格中的文字，水平对齐方式
+
+   left/center/right
+
+   Valign：设置单元格中的文字，垂直对齐方式
+
+4.nowrap="nowrap"当单元格文字过多时，设置单元格文字不断行显示。但是，
+
+  会把表格的宽度撑大
+
+ 
+
+
+表格的跨行与跨列
+
+1.跨列：在td上使用属性colspan="n"进行跨列。如果一个单元格跨n列，
+
+   则单元格右边的n-1个单元格需去掉
+
+ 
+
+2.跨行：在td上使用属性rowspan="n"进行跨列。如果一个单元格跨n行，
+
+   则单元格下边的n-1个单元格需去掉   */
+   /* <table border="1"cellspacing="0"style="border-collapse: collapse;"
+            cellpadding="15"bgcolor=""bordercolor=""background="">
+            <tr>
+                <th>标题一</th>
+                <th>标题二</th>
+                <th>标题三</th>
+            </tr>
+            <tr>
+                <td align="right"valign="bottom">1-1</td>
+                <td>1-2</td>
+                <td>1-3</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table>
+        
+        
+        <table border="1">
+            <tr>
+                <th>标题一</th>
+                <th colspan="2">标题二</th>
+            </tr>
+            <tr>
+                <td rowspan="2">1-1</td>
+                <td>1-2</td>
+                <td>1-3</td>
+            </tr>
+            <tr>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table> */
+     /* 2、input的常用属性：
+
+①type：声明input输入框是什么类型
+
+②name：给input输入框起名字。传输数据时，使用name=value的形式传递
+
+③value：input输入框的默认值。
+
+④placeholder：输入的提示文本，当输入框为空时，显示；当输入框有value时消失
+
+⑤checked="checked"  设置单选框或者复选框的默认选中
+
+⑥disabled="disabled"  设置input禁用。一旦使用disabled禁用的输入框，在传
+
+                                          递数据时，将不再往后台传递
+
+⑦hidden="hidden" 隐藏输入框，隐藏的内容依然可以向后台传递相当于
+
+     <input type="hidden"name="hidden"value="111" />
+ */
+
+
+/* 3、input的type类型
+
+①text：表示input为文本输入框，输入内容正常显示
+
+②password：表示input为密码输入框，输入内容会显示小黑点
+
+③radio：表示input为单选输入框
+
+>>>radio标签的value属性不能省略，往后台传递值时，传递的是value中的值
+
+>>>radio标签凭借name属性来判断是否是同一组标签。name相同为同一组，同
+
+       一组当中只能选择一个
+
+>>>使用checked="checked"可以设置默认选中项。这种属性名=属性值的写法，
+
+      可以省略属性值
+
+例如：<input type="radio"name="sex"value="男" checked/>男
+
+④checkbox：表示复选框。其他要求与radio相同
+
+⑤file：表示文件上传框。点击可以选择文件上传
+
+            accept属性，可以限制只能上传何种类型的文件。
+
+             *表示可以接受所有文件 */
+
+             /*img表示只能接受图片文件
+
+    multiple=“multiple”设置可以上传多个文件   
+
+⑥submit：表示input会显示为提交按钮，点击可以提交整张表单
+
+⑦reset：表示重置按钮，点击将表单恢复到初始状态
+
+⑧image：图形提交按钮。使用src属性导入一张图片，与submit按钮都具有提交
+
+           表单的功能
+
+⑨button：只是按钮形状，没有任何作用
+
+⑩hidden：隐藏的输入框。与普通输入框+hidden=“hidden”作用相同
+
+
+
+4、select下拉选择区块
+
+① <select></select>标签中有多个选项，用<option></option>表示
+
+② 一个<select></select>组合只能有一个name，所以使用时需给select标签起name， 而不是给option标签起name
+
+③ option标签如果有value属性，则传递数据时将传递value的属性值；如果没有value属性 则传递时将传递<option></option>标签中间的文字
+
+④ option标签的title属性：表示鼠标指上后显示的文字
+
+⑤ 给option标签加上selected="selected"表示默认选中项
+
+⑥ 给select标签加multiple="multiple"表示这个下拉框可以多选，但是这个属性几乎不用
+
+⑦ <optgroup lable=“组名”></optgroup>用于将所有的option标签进行分组，使用lable 属性表示组名 */
+/* <select name="city">
+     <optgroup label="group1">
+         <option>1</option>
+         <option>2</option>
+     </optgroup>
+     <optgroup label="group2">
+         <option>3</option>
+         <option>4</option>
+         <option>5</option>
+     </optgroup>     
+</select> */
+
+/* 5、textarea 文本域
+
+ ①文本域可以使用cols和rows设定宽高，但我们几乎不用
+
+     我们使用style="height: 50px;width: 150px;"来设定大小
+
+ ②使用css样式style="resize: none;"设定文本域的大小不允许拖动缩放
+
+ ③使用属性readonly="readonly"设置文本域为只读，不允许修改
+
+ ④css样式overflow用于设置超出区域的文字如何显示
+
+ 可选值有三个：
+
+ hidden：超出区域的文字直接隐藏，无法看到；
+
+ scroll：无论文字多少，都会显示水平和垂直方向的滚动条；
+
+ auto：（默认效果）文字少的时候没有滚动条，文字多的时候自动显示垂直滚动条
+
+ 也可以使用overflow-x和overflow-y单独设置水平和垂直方向滚动条是否显示 */
+ /* 1. <header> 
+定义了文档的头部区域，在一个文档中可以定义多个<header>元素。它是块元素
+
+<header>
+   <p>这是文档的头部</p>
+</header>
+2.<footer> 
+定义文档页脚，它不只是页面的最底部，在文档中也可以定义多个。
+<header>
+   <address>南京鼓楼</address>
+</header>
+3.<article> 
+定义页面独立的内容区域，标签定义的内容本身必须是有意义且必须独立于文档的其他部分，可用在的地方：博客文章，新闻，评论等。
+<article>
+    <h2>五一劳动节</h2>
+    <div>
+        今天是五一劳动节
+    </div>
+</article>
+4.<aside> 
+定义页面的侧边栏内容
+
+<aside>
+  <ul>
+    <li>腾讯</li>
+    <li>阿里</li>
+    <li>百度</li>
+  </ul>
+</aside>
+5.<time> 
+定义时间或日期，time标签中的datetime属性定义的时间不会被显示，但可能被其他应用使用
+<time datetime="2018-01-17">今天是我生日</time>
+6.<ruby> 
+加注释，ruby标签有两个子元素，rt注释的内容，rp是该标签不显示时显示的文字
+<ruby>
+  人<rt>ren</rt>
+  <rp>该标签无法显示</rp>
+</ruby
+7.<details> 
+用于描述文档或者文档某一部分细节，summary是details元素的标题
+<details>
+  <summary>点击查看更多</summary>
+  <p>这是点击后的内容</p>
+</details>
+8.<mark> 
+定义带有几号的文本，它会给你想要突出显示的文本加个 背景色
+<p>我最喜欢<mark>数学</mark></p>
+9.<nav> 
+定义导航栏
+<nav>
+  <a href="http://www.baidu.com">百度</a>
+  <a href="http://www.360.com">360</a>
+<nav>
+10.<progress> 
+progress显示数据的进度，属性value指定当前值，max最大值，最小值0不用设置
+<progress value="30" max="100"></progress>
+11.<section> 
+section一般有两个作用，1.定义文档中的节，和div类似。2.定义文章，这时一般带有标
+<section>
+  <h1></h1>
+  <p></p>
+</section>
+12.<video> 
+定义视频，属性src引入资源，controls视频的控制控件
+<video src="" controls="controls">你的浏览器不支持video标签</video>
+以防用户浏览的视频不支持某些格式的视频，可以为用户多准备些格式的视频,目前支持的视频格式video/ogg，video/mp4，video/webm其他格式需要转换
+<video controls="controls">
+  <source src="" type="video/ogg">
+  <source src="" type="video/mp4">
+  <source src="" type="video/webm">
+  你的浏览器不支持video标签
+</video>
+13.<audio> 
+该标签可定义声音，及其他的音频文件，不加controls不显示音频的控制界面
+<audio src="" controls="controls">你的浏览器不支持audio标签</audio>
+1
+<video controls="controls">
+  <source src="xx.ogg" type="audio/ogg">
+  <source src="xx.mp3" type="audio/mpeg">
+  你的浏览器不支持audio标签
+</video>
+目前音频可用类型audio/ogg，audio/mpeg
+14.<datalist> 
+提示可能的值，datalist及其选项不会被显示出来，它仅仅是合法输入值的列表使用input元素的list属性来邦定datalist，下面选项使用option定义
+<input type="text" list="cars">
+  <datalist id="cars">
+      <option value="宝马"></option>
+      <option value="奔驰"></option>
+      <option value="奥迪"></option>
+  </datalist> */
+  /* 14.<embed> 
+定义插入的内容，如插件，flash，标签中间不要加内容会显现出来
+<embed src="swf/flash5924.swf" tyep="application/x-shockwave-flash">
+</embed>
+15.<canvas> 
+canvas画布只是个容器，你可以通过控制坐标在canvas上绘制图形，一般配合js可以实现非常复杂的动画效果 */
+/* css的三种引入方式
+
+
+1.行内样式
+
+最直接最简单的一种，直接对HTML标签使用style=""，例如：
+
+<p style="color:#F00; "></p>
+
+缺点：HTML页面不纯净，文件体积大，不利于蜘蛛爬行，后期维护不方便。
+
+2.内嵌样式
+
+内嵌样式就是将CSS代码写在<head></head>之间，并且用<style></style>进行声明，例如：
+
+<style type="text/css">
+
+body,div,a,img,p{margin:0; padding:0;}
+
+</style>
+
+优缺点：页面使用公共CSS代码，也是每个页面都要定义的，如果一个网站有很多页面，每个文件都会变大，后期维护难度也大，如果文件很少，CSS代码也不多，这种样式还是很不错的。
+
+3.外部样式
+
+    31.链接样式（推荐）
+
+
+    链接样式是使用频率最高，最实用的样式，只需要在<head></head>之间加上<link…/>就可以了，如下：
+
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+
+    优缺点：实现了页面框架代码与表现CSS代码的完全分离，使得前期制作和后期维护都十分方便
+
+    3.2.导入样式（不建议使用）
+
+    导入样式和链接样式比较相似，采用@import样式导入CSS样式表，在HTML初始化时，会被导入到HTML或者CSS文件中，    成为文件的一部分，类似第二种内嵌样式。
+
+    @import在html中使用，如下：
+
+    <style type="text/css">
+    @import url(style.css);
+    </style>
+
+    @import在CSS中使用，如下：
+
+    @import url(style.css);
+
+  
+
+    链接式和导入式的区别：
+    <link>
+        1、属于XHTML
+        2、优先加载CSS文件到页面
+    @import
+        1、属于CSS2.1
+        2、先加载HTML结构在加载CSS文件。
+
+
+
+第二：四种CSS引入方式的优先级
+
+1.就近原则
+
+2.理论上：行内>内嵌>链接>导入
+
+3.实际上：内嵌、链接、导入在同一个文件头部，谁离相应的代码近，谁的优先级高（页面多种方式使用css样式引入）
+
+<!--外部样式表-->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+ 
+        <!--内嵌样式表-->
+        <style type="text/css">
+            p{
+                color: blue;
+            }
+        </style>
+  /* */
+ /* <外部样式表 --> */
+        /* <link rel="stylesheet" type="text/css" href="css/style.css" />   */
+
+        /* 元素选择符：类选择符、id选择符、类选择符、通配选择符 
+类型选择符：以元素的类标签进行选择
+
+<span style="font-size:18px;"><style>
+        h1{
+            color:blue;
+        }
+</style></span> */
+/* <span style="font-size:18px;"><head>
+<style>
+#s{
+color:red;
+}
+</style>
+</head>
+</span> */
+/* h2, p { color: gray; }
+上述规则在选择器中指定了多个对象，对象之间用逗号来分隔。逗号告诉浏览器，规则中包含两个不同的选择器。这样的选择器叫群组选择器。
+
+群组选择器可以减少样式的重复定义。可以把任意数量、任意类型的选择器放在群组中进行声明。如：
+
+p, span, .blue, #blue { color: blue; }
+使用逗号对选择器进行分隔，使用页面中所有的p, span, .blue, #blue都具有相同的样式。这样做的好处是，需要使用相同样式的地方只需要书写一次，可以减少代码量，改善CSS代码的结构，提高网页的性能。 */
+/* 关系选择器分类
+包含选择器
+子选择器
+相邻选择器
+兄弟选择器
+包含选择器
+包含选择器使用空格隔开，包含选择符将会命中所有符合条件的后代，包括儿子，孙子，孙子的孙子… */
+/* <div class="test">
+    <h3>这是一个标题</h3>
+    <p>这是一个文字段落</p>
+    <p>这是一个文字段落</p>
+</div>
+子选择器
+与包含选择器不同，子选择符只能命中子元素
+<style>
+.demo > div { border:1px solid #f00; }
+</style>
+</head>
+<body>
+<div class="demo">
+    <div>0
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</div>
+</body> */
+/* 相邻选择器
+选择同级元素相邻的第一个元素
+<style>
+/* 相邻选择符(E+F) */
+/* h3 + p { color: #f00; }
+</style>
+</head>
+<body>
+<h3>这是一个标题</h3>
+<p>p1</p>
+<p>p2</p>
+<p>p3</p>
+</body> */ 
+/* 兄弟选择器
+选择同级元素之后符合条件的所有同级元素
+<style>
+
+/* 兄弟选择符(E~F) */
+/* h3 ~ p { color: #f00; }
+</style>
+</head>
+<body>
+<h3>这是一个标题</h3>
+<p>p1</p>
+<p>p2</p>
+<p>p3</p>
+</body> */
+/* 当对一个文档进行布局（lay out）的时候，浏览器的渲染引擎会根据标准之一的 CSS 基础框盒模型（CSS basic box model），将所有元素表示为一个个矩形的盒子（box）。CSS 决定这些盒子的大小、位置以及属性（例如颜色、背景、边框尺寸…）。 */
+
+/* 每个盒子由四个部分（或称区域）组成，其效用由它们各自的边界（Edge）所定义（原文：defined by their respective edges，可能意指容纳、包含、限制等）。如图，与盒子的四个组成区域相对应，每个盒子有四个边界：内容边界 Content edge、内边距边界 Padding Edge、边框边界 Border Edge、外边框边界 Margin Edge。 */
+/* 内容区域 content area ，由内容边界限制，容纳着元素的“真实”内容，例如文本、图像，或是一个视频播放器。它的尺寸为内容宽度（或称 content-box 宽度）和内容高度（或称 content-box 高度）。它通常含有一个背景颜色（默认颜色为透明）或背景图像。
+
+如果 box-sizing 为 content-box（默认），则内容区域的大小可明确地通过 width、min-width、max-width、height、min-height，和 max-height 控制。
+
+内边距区域 padding area 由内边距边界限制，扩展自内容区域，负责延伸内容区域的背景，填充元素中内容与边框的间距。它的尺寸是 padding-box 宽度 和 padding-box 高度。
+
+内边距的粗细可以由 padding-top、padding-right、padding-bottom、padding-left，和简写属性 padding 控制。
+
+边框区域 border area 由边框边界限制，扩展自内边距区域，是容纳边框的区域。其尺寸为 border-box  宽度 和 border-box 高度。
+
+边框的粗细由 border-width 和简写的 border 属性控制。如果 box-sizing 属性被设为 border-box，那么边框区域的大小可明确地通过 width、min-width, max-width、height、min-height，和 max-height 属性控制。假如框盒上设有背景（background-color 或 background-image），背景将会一直延伸至边框的外沿（默认为在边框下层延伸，边框会盖在背景上）。此默认表现可通过 CSS 属性 background-clip 来改变。
+
+外边距区域 margin area 由外边距边界限制，用空白区域扩展边框区域，以分开相邻的元素。它的尺寸为 margin-box 宽度 和 margin-box 高度。
+
+外边距区域的大小由 margin-top、margin-right、margin-bottom、margin-left，和简写属性 margin 控制。在发生外边距合并的情况下，由于盒之间共享外边距，外边距不容易弄清楚。
+
+最后，请注意，除可替换元素外，对于行内元素来说，尽管内容周围存在内边距与边框，但其占用空间（每一行文字的高度）则由 line-height 属性决定，即使边框和内边距仍会显示在内容周围。     */
+/* 一、Display的属性值
+
+block： */
+
+/*表现为一个块级元素（一般情况下独占一行）*/
+
+/* 当display被设置为block(块)时，容器中所有的元素将会被当作一个单独的块，就像<DIV>元素一样，它会在那个点被放入到页面中。(实际上你可以设置<span>的display:block，使其可以像<DIV>一样工作。
+
+inline: */
+
+/*表现为一个行级元素（一般情况下不独占一行）*/
+
+
+/* 将display设置为inline，将使其行为和元素inline一样---即使它是普通的块元素如<DIV>，它也将会被组合成像<span>那样的输出流。
+
+none: */
+
+/*元素不可见，并且不为其保留相应的位置*/
+
+/* 最后是display被设置：none,这时元素实际上就从页面中被移走，它下面所在的元素就会被自动跟上填充。 */
+/* 二、Display的使用 */
+/* 1、display默认属性值为块级的元素： */
+/* adress,quote,body,xmp,center,col,colgroup,dd,dtr,div,
+
+dl,dt,fieldset,form,hn,hr,iframe,legend,listing,marquee,
+
+menu,ol,p,plaintext,pre,table,td,th,tr,ul
+
+ 
+
+2、display默认属性值为none的元素：
+
+br,frame,nextid,tbody,tfoot,thead
+
+ 
+
+3、li元素的display属性默认值为：list-item
+
+4、其他元素display属性默认值都为inline
+
+ 
+
+三、Display的特性
+改变元素的display属性将对周围元素造成的影响有：
+1、在属性值设为block的元素后面添加新行
+2、从属性值设为inline的元素所在行中删除一行
+3、隐藏属性值设为none的元素并且释放该元素在文档中所占的物理空间，对于其他元素来说，相当于该元素不存在，因此，该元素的位置被其他元素顶替
+四、visibility的属性值
+visibility:visible */
+/*元素可见，默认值*/
+/* visibility:hidden */
+/*元素不可见，但仍然为其保留相应的空间*/
+/* visibility:collapse */
+/*只对table对象起作用，能移除行或列但不会影响表格的布局。如果这个值用在table以外的对象上则表现为hidden。*/
+/* visibility:inherit */
+/*继承上级元素的visibility值。*/
+ /* 五、visibility特性 */
+/* 用来确定元素是显示还是隐藏，这用visibility="visible|hidden"来表示，visible表示显示，hidden表示隐藏。当visibility被设置为"hidden"的时候，元素虽然被隐藏了，但它仍然占据它原来所在的位置。 */
+/* 六、由以上可以了解到 Visibility:none 和 Display:hidden 的区别
+display:none;
+使用该属性后，HTML元素（对象）的宽度、高度等各种属性值都将“丢失”;
+visibility:hidden;
+使用该属性后，HTML元素（对象）仅仅是在视觉上看不见（完全透明），而它所占据的空间位置仍然存在，也即是说它仍具有高度、宽度等属性值。
+七、什么时候使用Visibility或者Display属性？
+Visibility和Display属性虽然都可以达到隐藏页面元素的目的，但它们的区别在于如何回应正常文档流。
+如果你想隐藏某元素，但在页面上保留该元素的空间的话，你应该使用visibility：hidden。如果你想在隐藏某元素的同时让其它内容填充空白的话应该使用display：none。
+在现实中我（作者）更多的倾向于使用display属性（相信这也是大多数人的习惯，bolo注）。当你决定用display：none来隐藏一个元素时，你必须知道其它内容将填充到该元素留下的空白位置，从而改变页面的布局。
+八、使用Visibility或者Display属性的注意事项
+display:none:
+1、JS读取元素属性值
+如果在样式文件或页面文件代码中直接用display:none对元素进行了隐藏，载入页面后，在没有通过js设置样式使元素显示的前提下，使用js代码会无法正确获得该元素的一些属性，比如offSetTop,offSetLeft等，返回的值会为0，通过js设置style.display来使元素显示后才能正确获得这些值。
+2、SEO优化时需要注意
+使用display:none隐藏的元素不会被百度等搜索网站检索，会影响到网站的SEO，某些情况下可以使用left:-100000px来达到同样效果。
+3、样式文件
+如果是通过样式文件或<style>css</style>方式来设置元素的display:none样式，用js设置style.display=""并不能使元素显示，可以使用block或inline等值来代替。通过style="display:none"直接在元素上进行的设置不会有这个问题
+4、有些情况下可以使用style.visibility来代替style.display，但是要注意的是style.visibility隐藏元素时会保留元素在页面上所占的空间，而style.display隐藏元素且让出所占页面空间。
+visibility:hidden:
+如果想让某一段代码在前台不显示，最简单的方法是用css的display:none,这样，下边的内容就自动填补这个空隙。但是在一些特殊的情况下，我们只需要隐藏这个元素，但它的位置不能被占用了，那么，visibility:hidden就可以实现这个要求。   */
+      /*div{
+            width:30px;
+            height: 40px;
+            background:red;
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-delay: 3s;
+        }
+        div:hover{
+            width:100px;
+        } */
+      /* div{ margin:30px;
+width:200px;
+height:100px;
+background-color:yellow; */
+/* Rotate div */
+/* transform:rotate(9deg);} */
+        /* @font-face
+{
+    
+    font-family: myFirstFont;
+    src: url(sansation_bold.woff);
+    font-weight:bold;
+}
+  */
+/* div
+{
+    font-family:myFirstFont;
+} */
+ /* .div1 {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border-radius: 10px; 
+} */
+ 
+/* .div2 {
+	width:100px;
+	height:100px;
+	background-color: blue;
+	border-radius: 10px 9px 5px 8px;
+} */
+/* .div3{
+	width:100px;
+	height:50px;
+	background-color: green;
+	border-radius:50px 50px 0px 0px;
+} */
+/* .div4{
+	width:100px;
+	height:100px;
+	background-color:yellow;
+	border-radius:50px 50px 50px 50px;
+	
+}  */
+
+
+/* .div_shadow1{
+	width:100px;
+	height:100px;
+	background-color: green;
+	box-shadow: 4px 2px 6px red;
+} */
+ 
+/* .div_shadow2{
+	width: 100px;
+	height:100px;
+	background-color:grey;
+	box-shadow:5px 5px 10px red inset ;
+} */
+/* .div_shadow3{
+	width: 100px;
+	height:100px;
+	background-color:grey;
+	box-shadow:0px 0px 10px red inset ;
+} */
+/* .div_shadow{
+	width: 100px;
+	height:100px;
+	background-color:grey;
+	box-shadow:0px 0px 10px red inset,4px 2px 6px blue;
+} */
+
+
+        /* p:nth-last-child(2){
+                color: red;
+            }  */
+         /* #poem:before{
+                content: '——';
+}
+        #poem:after{
+    content: '——';
+} */
+/* .ddd{
+ color:red;
+}
+.rrr{
+    color:blueviolet;
+} */
+/* div{
+    width:140px;
+    height: 150px;
+    background: red;
+}
+div
+{
+transform: rotate(30deg);
+-ms-transform: rotate(30deg); /* IE 9 */
+/* -webkit-transform:rotate(30deg); Safari and Chrome */
+/* } */ 
+        </style>
+</head>
+   <body>
+       <!-- <div>
+           东华帝君
+       </div> -->
+        <!-- <div class="div1">普通圆角效果</div> -->
+        <br>
+        <!-- <div class="div2">四个角圆角单独设置</div> -->
+        <br>
+        <!-- <div class="div3">实心上半圆</div> -->
+        <br>
+        <!-- <div class="div4">实心圆</div> --> 
+      
+
+        <!-- <div class="div_shadow1">x,y轴方向设置外阴影</div> -->
+<br>
+<!-- <div class="div_shadow2">x,y轴方向设置内阴影</div> -->
+<br>
+<!-- <div class="div_shadow3">四周设置阴影</div> -->
+<br>
+<!-- <div class="div_shadow">添加多个阴影</div> -->
+
+
+<!-- <div>
+    tt
+</div> -->
+</body>
+
+       <!-- <p class="ddd   rrr">dfgghjkkll</p> -->
+        <!-- <p id="poem">像一朵水莲花，</p> -->
+        <!-- 层叠性的条件
+（1）元素相同
+
+（2）属性相同
+
+（3）优先级相同 -->
+        <!-- <p>我是段落</p>
+        <div>
+            dfgh
+        </div>
+        <p>我是段落</p>
+        <p>我是段落</p> -->
+        <!-- <img src="w3school.jpg" width="104" height="142"/> -->
+
+   <!-- <ol>
+            <li>er</li>
+            <li>rty</li>
+        </ol> -->
+
+            <!-- <a href="#test" >1</a>      同一个页面不同部分的跳转，锚点的写法 -->
+            <!-- <p id="test" >2</p> -->
+
+            <!-- <div id="test"/>            不同页面跳转，同时存在锚点
+            <a href="a.html#test"></a> -->
+
+            <!-- <div id="test"/>            不同页面带参数跳转，同时存在锚点
+            <a href="a.php?p=abc#test"></a> -->
+
+        <!-- <ul>
+            <li>Coffee</li>
+            <li>Milk</li>
+        </ul> -->
+
+        <!-- disc实心园、circle空心园、square小方块 -->
+
+        <!-- <h1></h1>...<h6></h6> 正文标题标记结束后它会自动换行 会以较大的粗体显示-->
+
+<!-- <h1>11111</h1>
+<h2>22222</h2>
+<h3>33333</h3>
+<h4>44444</h4> 
+<h5>55555</h5>
+<h6>66666</h6> -->
+
+        <!-- <font color=”文本颜色” size=”文字大小” face=”字体”>文本</font> -->
+
+            <!-- 加粗：<b></b>或者<strong> -->
+
+            <!-- 倾斜：<i></i>或者<em> -->
+            
+            <!-- 下划线：<u><u>或者 -->
+            
+            <!-- 删除线：<s></s>或者<strike> -->
+            
+            <!-- 上标：<sup>文本</sup> -->
+            
+            <!-- 小标：<sub>文本</sub> -->
+
+            <!-- 居中标记：<center></center> -->
+
+            <!-- 水平线 <hr> -->
+
+            <!-- 换行：<br>换行不换段，xml中<br/> -->
+
+            <!-- <tabel>
+                <tr>
+                    <th>......<th>
+                    <th>......<th>
+                </tr>
+                <tr>
+                    <td>......</td>
+                    <td>......</td>
+                </tr>
+            </tabel>  align：表格的对齐方式，通常是left，center，right-->
+
+            <!-- <table width="100%" border="1" cellspacing="0" cellpadding="45" align="center">
+                    <tr align="center">
+                     <td rowspan="2">A</td>
+                     <td>B</td>
+                     <td>C</td>
+                     <td colspan="2">D</td>
+                    </tr>
+                    <tr align="center">
+                     <td>E</td>
+                     <td>F</td>
+                     <td colspan="2">G</td>
+                    </tr>
+                    <tr align="center">
+                     <td>H</td>
+                     <td colspan="2" rowspan="2">I</td>
+                     <td>G</td>
+                     <td>K</td>
+                    </tr>
+                    <tr align="center">
+                     <td>L</td>
+                     <td>M</td>
+                     <td>N</td>
+                    </tr>
+                    <tr align="center">
+                     <td>O</td>
+                     <td>P</td>
+                     <td colspan="2">Q</td>
+                     <td>R</td>
+                    </tr>
+                   </table>
+            </body>  -->
+            <!-- <p> 
+                    <lable for="pwd">密码：</lable>
+                 <input type="password" id="pwd"/>
+                 </p> -->
+
+
+                 <!-- <div>
+                        <input type="file"name="attach"/>请选择上传文件 
+                 </div> -->
+
+
+                 <!-- 提交按钮 -->
+                    <!-- <input type="submit" value="按钮上的文字" /> -->
+
+                    <!-- 重置按钮 -->
+
+                    <!-- <input type="reset" value="按钮上的文本" />   -->
+                    <!-- 恢复到默认设置的状态   -->
+
+                    <!-- 隐藏域 -->
+                    <!-- <input type="hidden" name="id1" /> -->
+
+                    <!-- 文件域 -->
+
+                    <!-- <input type="file" /> --> 
+       
+                    <!-- 1、继承性   文本属性都可以继承 -->
+
+        <!-- 8种清除浮动的方法 -->
+
+                    <!-- 1.父级div定义 height 
+                    <style type="text/css"> 
+                        .div1{background:#000080;border:1px solid red;/*解决代码*/height:200px;} 
+                        .div2{background:#800080;border:1px solid red;height:100px;margin-top:10px} 
+                        .left{float:left;width:20%;height:200px;background:#DDD} 
+                        .right{float:right;width:30%;height:80px;background:#DDD} 
+                        </style> 
+                        <div class="div1"> 
+                        <div class="left">Left</div> 
+                        <div class="right">Right</div> 
+                        </div> 
+                        <div class="div2"> 
+                        div2 
+                        </div>  -->
+                        <!-- 原理：父级div手动定义height，就解决了父级div无法自动获取到高度的问题。 
+
+                        优点：简单、代码少、容易掌握 
+
+                        缺点：只适合高度固定的布局，要给出精确的高度，如果高度和父级div不一样时，会产生问题 
+
+                        建议：不推荐使用，只建议高度固定的布局时使用 -->
+                    
+                    <!-- 2，结尾处加空div标签 clear:both 
+                    <style type="text/css"> 
+                        .div1{background:#000080;border:1px solid red} 
+                        .div2{background:#800080;border:1px solid red;height:100px;margin-top:10px} 
+                        .left{float:left;width:20%;height:200px;background:#DDD} 
+                        .right{float:right;width:30%;height:80px;background:#DDD} 
+                        /*清除浮动代码*/ 
+                        .clearfloat{clear:both} 
+                        </style> 
+                        <div class="div1"> 
+                        <div class="left">Left</div> 
+                        <div class="right">Right</div> 
+                        <div class="clearfloat"></div> 
+                        </div> 
+                        <div class="div2"> 
+                        div2 
+                        </div> 
+                        原理：添加一个空div，利用css提高的clear:both清除浮动，让父级div能自动获取到高度 
+
+                        优点：简单、代码少、浏览器支持好、不容易出现怪问题 
+
+                        缺点：不少初学者不理解原理；如果页面浮动布局多，就要增加很多空div，让人感觉很不好 
+
+                        建议：不推荐使用，但此方法是以前主要使用的一种清除浮动方法 
+
+                3，父级div定义 伪类:after 和 zoom 
+                <style type="text/css"> 
+                    .div1{background:#000080;border:1px solid red;} 
+                    .div2{background:#800080;border:1px solid red;height:100px;margin-top:10px} 
+                    .left{float:left;width:20%;height:200px;background:#DDD} 
+                    .right{float:right;width:30%;height:80px;background:#DDD} 
+                    /*清除浮动代码*/ 
+                    .clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+                    .clearfloat{zoom:1} 
+                    </style> 
+                    <div class="div1 clearfloat"> 
+                    <div class="left">Left</div> 
+                    <div class="right">Right</div> 
+                    </div> 
+                    <div class="div2"> 
+                    div2 
+                    </div> 
+                    原理：IE8以上和非IE浏览器才支持:after，原理和方法2有点类似，zoom(IE转有属性)可解决ie6,ie7浮动问题 
+
+                    优点：浏览器支持好、不容易出现怪问题（目前：大型网站都有使用，如：腾迅，网易，新浪等等） 
+
+                    缺点：代码多、不少初学者不理解原理，要两句代码结合使用才能让主流浏览器都支持。 
+
+                    建议：推荐使用，建议定义公共类，以减少CSS代码。 
+
+            4，父级div定义 overflow:hidden 
+            <style type="text/css"> 
+                .div1{background:#000080;border:1px solid red;/*解决代码*/width:98%;overflow:hidden} 
+                .div2{background:#800080;border:1px solid red;height:100px;margin-top:10px;width:98%} 
+                .left{float:left;width:20%;height:200px;background:#DDD} 
+                .right{float:right;width:30%;height:80px;background:#DDD} 
+                </style> 
+                <div class="div1"> 
+                <div class="left">Left</div> 
+                <div class="right">Right</div> 
+                </div> 
+                <div class="div2"> 
+                div2 
+                </div> 
+                原理：必须定义width或zoom:1，同时不能定义height，使用overflow:hidden时，浏览器会自动检查浮动区域的高度 
+
+                优点：简单、代码少、浏览器支持好 
+
+                缺点：不能和position配合使用，因为超出的尺寸的会被隐藏。 
+
+                建议：只推荐没有使用position或对overflow:hidden理解比较深的朋友使用。 
+
+            5，父级div定义 overflow:auto 
+            <style type="text/css"> 
+                .div1{background:#000080;border:1px solid red;/*解决代码*/width:98%;overflow:auto} 
+                .div2{background:#800080;border:1px solid red;height:100px;margin-top:10px;width:98%} 
+                .left{float:left;width:20%;height:200px;background:#DDD} 
+                .right{float:right;width:30%;height:80px;background:#DDD} 
+                </style> 
+                <div class="div1"> 
+                <div class="left">Left</div> 
+                <div class="right">Right</div> 
+                </div> 
+                <div class="div2"> 
+                div2 
+                </div> 
+                原理：必须定义width或zoom:1，同时不能定义height，使用overflow:auto时，浏览器会自动检查浮动区域的高度 
+
+                优点：简单、代码少、浏览器支持好 
+
+                缺点：内部宽高超过父级div时，会出现滚动条。 
+
+                建议：不推荐使用，如果你需要出现滚动条或者确保你的代码不会出现滚动条就使用吧。 
+
+            6，父级div 也一起浮动 
+            <style type="text/css"> 
+                .div1{background:#000080;border:1px solid red;/*解决代码*/width:98%;margin-bottom:10px;float:left} 
+                .div2{background:#800080;border:1px solid red;height:100px;width:98%;/*解决代码*/clear:both} 
+                .left{float:left;width:20%;height:200px;background:#DDD} 
+                .right{float:right;width:30%;height:80px;background:#DDD} 
+                </style> 
+                <div class="div1"> 
+                <div class="left">Left</div> 
+                <div class="right">Right</div> 
+                </div> 
+                <div class="div2"> 
+                div2 
+                </div> 
+                原理：所有代码一起浮动，就变成了一个整体 
+
+                优点：没有优点 
+
+                缺点：会产生新的浮动问题。 
+
+                建议：不推荐使用，只作了解。 
+
+            7，父级div定义 display:table 
+            <style type="text/css"> 
+                .div1{background:#000080;border:1px solid red;/*解决代码*/width:98%;display:table;margin-bottom:10px;} 
+                .div2{background:#800080;border:1px solid red;height:100px;width:98%;} 
+                .left{float:left;width:20%;height:200px;background:#DDD} 
+                .right{float:right;width:30%;height:80px;background:#DDD} 
+                </style> 
+                <div class="div1"> 
+                <div class="left">Left</div> 
+                <div class="right">Right</div> 
+                </div> 
+                <div class="div2"> 
+                div2 
+                </div> 
+                原理：将div属性变成表格 
+
+                优点：没有优点 
+
+                缺点：会产生新的未知问题。 
+
+                建议：不推荐使用，只作了解。 
+
+            8，结尾处加 br标签 clear:both 
+            <style type="text/css"> 
+                .div1{background:#000080;border:1px solid red;margin-bottom:10px;zoom:1} 
+                .div2{background:#800080;border:1px solid red;height:100px} 
+                .left{float:left;width:20%;height:200px;background:#DDD} 
+                .right{float:right;width:30%;height:80px;background:#DDD} 
+                .clearfloat{clear:both} 
+                </style> 
+                <div class="div1"> 
+                <div class="left">Left</div> 
+                <div class="right">Right</div> 
+                <br class="clearfloat" /> 
+                </div> 
+                <div class="div2"> 
+                div2 
+                </div> 
+                
+                
+                原理：父级div定义zoom:1来解决IE浮动问题，结尾处加 br标签 clear:both 
+                
+                建议：不推荐使用，只作了解。  -->
+            
+                <!-- /* 删除线 */
+                em {
+                    text-decoration:line-through;
+                }
+                /* 上划线 */
+                em {
+                    text-decoration:overline;
+                }
+                /* 下划线 正常来讲文本是不会使用字体下划线的以防被认为是链接，通常会使用边框 “border-bottom” */
+                em {
+                    text-decoration:underline;
+                }
+                /* 下划线与上划线,只需用空格连接 */
+                em {
+                    text-decoration:overline underline;
+                }
+                /* 最后就是取消装饰，例如对<a>元素的链接取消下划线 */
+                a {
+                    text-decoration:none;
+                } -->
+                <!-- baseline ：基线对齐，如果元素没有基线（图像或表单），则该元素地段与父元素基线对齐。
+                sub ：下标，具体距离由浏览器决定
+                super ：上标，具体距离由浏览器决定
+                bottom ：底端对齐，元素行内框底端与行框底端对齐
+                top ：顶端对齐，注意是行内框与行框
+                middle ：居中对齐，接近但不是中点对齐，对齐目标是父元素的基线上方0.25处 -->
+</html>

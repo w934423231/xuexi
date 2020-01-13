@@ -1,0 +1,23 @@
+// 父类型接口
+/// 父类型列表
+http://localhost/api/cate/cateList
+// 父类型增加
+http://localhost/api/cate/cateAdd
+// 父类型修改 cateid
+http://localhost/api/cate/cateEdit
+// 父类型删除 cateid
+http://localhost/api/cate/cateDel
+
+// 子类型接口
+/// 子类型列表 [cid]
+http://localhost/api/cate/subcateList
+// 子类型增加  cid
+http://localhost/api/cate/subcateAdd
+// 子类型修改 subid
+http://localhost/api/cate/subcateEdit
+// 子类型删除 subid
+http://localhost/api/cate/subcateDel
+
+
+
+

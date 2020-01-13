@@ -1,0 +1,16 @@
+page{
+    background-color: #c0c0c0;
+}
+.top{
+width:100vw;
+height:5vh;
+background-color: #fff;
+display: flex;
+padding: 10px;
+box-sizing: border-box;
+justify-content: space-between;
+align-items: center;
+}
+.top text{
+    font-size: 13px;
+}

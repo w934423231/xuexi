@@ -1,0 +1,28 @@
+<!--pages/gouwuche/gouwuche.wxml-->
+<view class="top">
+	<view>编辑商品</view>
+</view>
+<scroll-view class="body" scroll-y="true">
+	<view  class="box">
+		<image class="image" src="" />
+		<view class="font">
+			<text>1233545687</text>
+			<text>1233545687</text>
+			<text>1233545687</text>
+			<view class="jiage">
+				<view class="qian"></view>
+				<view class='num'></view>
+			</view>
+		</view>
+	</view>
+</scroll-view>
+<view class="bottomm">
+	<van-checkbox value="{{ checked }}" checked-color="red" bind:change="onchange">
+		全选
+	</van-checkbox>
+	<view class="fons">合计:
+		<text>￥0</text>
+	</view>
+	<van-button type="danger" disabled='true' custom-class='red'>去结算</van-button>
+</view>
+

@@ -1,0 +1,26 @@
+<!--pages/ DistributionAM/ DistributionAM.wxml-->
+<view class="box">
+	<view class="address" wx:for="{{address}}">
+		<view>
+			<view>
+				<view class="fontstyle1" >
+					{{item.addname}}{{item.addsex}}
+				</view>
+				<view class="fontstyle1">
+					{{item.addiphone}}
+				</view>
+			</view>
+			<view  class="fontstyle2">
+				{{item.addre}}
+			</view>
+		</view>
+		<view class="iconfont icon-bianji bianji" />
+	</view>
+</view>
+<view class="apendaddress">
+    <view bindtap="addaddress">
+        <view class="iconfont icon-webicon308 icon" ></view>
+        <text>添加地址</text>
+    </view>
+</view>
+

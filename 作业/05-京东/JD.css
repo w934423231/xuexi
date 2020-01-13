@@ -1,0 +1,428 @@
+.top{
+    width: 99%;
+    height: 30px;
+    background: #e3e4e5;
+    border: 1px #ddd solid;
+}
+.top_one{
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+.top_one img{
+    width: 15px;
+    height: 15px;
+}
+.top_one li{
+    float: left;
+    font-size: 12px;
+    position: relative;
+}
+.top_one li .dispns{
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    float: left;
+    z-index: 999999;
+    display: none;
+}
+.top_one ol .td{
+    padding-right: 7px;
+    padding-left: 7px;
+}
+.top_one ol .tdgba:hover{
+    padding-right: 6px;
+    padding-left: 6px;
+    border: 1px #999 solid;
+    border-bottom: none;
+    background: #fff;
+}
+.top_one ol .tdgba:hover + .dispns{
+    display: block;
+}
+.top_one ol .spacer{
+    width: 1px;
+    height: 10px;
+    margin: 11px 5px 0;
+    background: #ccc;
+}
+.top_one li a{
+    color: #999;
+}
+.nav{
+    width: 100%;
+    height: 141px;
+    border-bottom: 1px #ddd solid;
+
+}
+.nav_mage{
+    width: 80%;
+    height: 141px;
+    margin: 0 auto;
+}
+.nav_right_url{
+    width: 100px;
+    height: 100px;
+    background-image: url("https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1565569580&di=83baa77dac33b4625483ae37c47fa2ae&src=http://www.szquanli.com/uploads/allimg/170831/2-1FS1095324-52.png");
+    background-size: 100% 100%;
+    margin-top: 20px;
+}
+.nav_left{
+    width: 20%;
+    height: 141px;
+    float: left;
+}
+.nav_right{
+    width: 80%;
+    height: 120px;
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.nav_right_ons{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_right_ons form:nth-child(1) input{
+    float: left;
+    outline: none;
+}
+.nav_right_ons form:nth-child(1) input:nth-child(1){
+    width: 486px;
+    height: 36px;
+    border: 2px #e2231a solid;
+    border-right: none;
+    text-indent: 20px;
+    color: #bbb;
+}
+.nav_right_ons form:nth-child(1) input:nth-child(2){
+    width: 58px;
+    height: 42px;
+    border: 2px #e2231a solid;
+    border-left: none;
+    background: red;
+    background-image: url("image/img.png");
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.nav_right_ons form:nth-child(2) input{
+    width: 132px;
+    height: 36px;
+    border: 1px #bbb solid;
+    color: red;
+    background: #fff;
+    background-image: url("image/img.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    text-indent: 30px;
+}
+.casyns{
+    width: 100%;
+    height: 30px;
+}
+.casyns ul li{
+    margin-right: 10px;
+    float: left;
+    font-size: 12px;
+    line-height: 30px;
+}
+.casyns ul li a{
+    color: #999;
+}
+.casyns ul li a:hover{
+    color: red;
+}
+.the{
+    padding-top: 10px;
+    height: 30px;
+}
+.the ul li{
+    line-height: 30px;
+    float: left;
+    margin-right: 10px;
+}
+.the_red{
+    color: red;
+    font-weight: bold;
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    background: #f4f4f4;
+    padding-bottom: 20px;
+}
+.banner_magn{
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 10px;
+    overflow: hidden;
+
+}
+.banner_magn div{
+    float: left;
+    margin-right: 10px;
+}
+.banner_left{
+    width: 16%;
+    height: 500px;
+    background: #fff;
+    font-size: 14px;
+    padding: 10px 0 10px 0;
+    text-indent: 10px;
+    position: relative;
+}
+.banner_left ul li{
+    height: 25px;
+    line-height: 25px;
+
+}
+.banner_left_item{
+    width: 100%;
+}
+.banner_left .postvsf{
+    width: 520%;
+    height: 480px;
+    background: #fff;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    border: 1px #f7f7f7 solid;
+    box-shadow: 2px 0 5px rgba(0,0,0,.3);
+    padding: 10px;
+    overflow: hidden;
+    display: none;
+    font-size: 12px;
+}
+.banner_hover_left{
+    width: 70%;
+    height: 500px;
+    float: left;
+ }
+.banner_hover_left_top{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+}
+.banner_hover_left_top p{
+    background: #333;
+    float: left;
+    margin-right: 10px;
+    padding: 0 5px 0 5px;
+    color: #fff;
+}
+.banner_hover_left_top_one{
+    width: 100%;
+
+}
+.banner_hover_left_top_one p{
+    word-wrap:break-word;
+    margin-right: 20px;
+    float: left;
+}
+.banner_hover_right img{
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+.banner_hover_right{
+    width: 20%;
+    height: 500px;
+    float: right;
+    background: red;
+}
+.banner_left .banner_left_item:hover{
+    background: #bbb;
+}
+.banner_left li:hover .postvsf{
+    display: block;
+}
+.banner_left a:hover{
+    color: red;
+}
+.banner_center{
+    width: 600px;
+    height: 500px;
+    background: red;
+    overflow: hidden;
+}
+.banner_center_one{
+    width: 2400px;
+    height: 500px;
+    animation: name 10s infinite;
+}
+@keyframes name {
+    0%{
+        margin-left: -0px;
+    }
+    33%{
+        margin-left: -600px;
+    }
+    66%{
+        margin-left: -1200px;
+    }
+    100%{
+        margin-left: -1800px;
+    }
+}
+.banner_center_one img{
+    width: 600px;
+    height: 500px;
+    background: red;
+    float: left;
+}
+.banner_right{
+    width: 17%;
+    height: 500px;
+    padding: 10px 20px 10px 20px;
+    overflow: hidden;
+    background: #fff;
+}
+.banner_right .banner_yonghu{
+    width: 100%;
+    height: 102px;
+    font-size: 12px;
+}
+.banner_yonghu .banner_yonghu_tx p{
+    float: left;
+    line-height: 20px;
+}
+.banner_yonghu .banner_yonghu_tx span{
+    margin-left: 10px;
+}
+.banner_yonghu_one{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px #ddd solid;
+    overflow: hidden;
+}
+.banner_yonghu_one img{
+    width: 40px;
+    height: 40px;
+}
+.banner_yonghu_fl{
+    width: 100%;
+    padding-top: 10px;
+}
+.banner_yonghu_fl p{
+    width: 45%;
+    height: 25px;
+    background: #e1251b;
+    border-radius: 45px;
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+}
+.banner_yonghu_fl p a{
+    color: #fff;
+}
+.banner_yonghu_fl p:nth-child(2){
+    float: right;
+    background: #363634;
+}
+.banner_yonghu_fl p:nth-child(2) a{
+    color:#e5d790;
+}
+.banner_yonghu_fl p:nth-child(2):hover{
+    background: #e1251b;
+    transition:1s;
+}
+.banner_yonghu_fl p:nth-child(2):hover a{
+    color: #fff;
+    transition:1s;
+}
+.banner_right .banner_xinwen{
+    width: 100%;
+    height: 130px;
+}
+.banner_xinwen_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items : center;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.banner_xinwen_ul{
+    width: 100%;
+    font-size: 12px;
+    overflow: hidden;
+}
+.banner_xinwen_ul ul li{
+    margin-top: 10px;
+}
+.banner_xinwen_ul>ul>li>a>span:nth-child(1){
+    padding: 1px 3px 1px 3px;
+    background: rgba(225,37,27,.08);
+    color: #e1251b;
+}
+.banner_xinwen_ul>ul>li>a>span:nth-child(2){
+    color: #999;
+}
+.banner_xinwen_ul>ul>li>a>span:nth-child(2):hover{
+    color: #e1251b;
+}
+.banner_right .banner_gongneng{
+    width: 100%;
+    height: 230px;
+    font-size: 12px;
+    overflow: hidden;
+    background: #fff;
+    padding-top: 10px;
+}
+.banner_gongneng ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.banner_gongneng ul li{
+    width: 30%;
+    height: 55px;
+    float: left;
+    margin-bottom: 4px;
+    text-align: center;
+}
+.banner_gongneng ul li img{
+    width: 28px;
+    height: 28px;
+}
+.miaos{
+    width: 80%;
+    height: 260px;
+    background: #f4f4f4;
+    margin: 0 auto;
+    padding: 20px 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    text-align: center;
+}
+.miaos>div{
+    width: 24%;
+    height: 260px;
+    background: red;
+}
+.miaos_one_ms{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+.miaos_one_sj span:nth-child(1){
+    font-size: 20px;
+    color: #fff;
+
+}
+.miaos_one_dj{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.miaos_one_dj p:nth-of-type(odd){
+    width: 30px;
+    height: 30px;
+}

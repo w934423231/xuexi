@@ -1,0 +1,22 @@
+<wxs module="dateUtil" src="../../utils/filter.wxs"></wxs>
+
+<view class="orderdata" wx:for="{{orderdata}}">	
+	<view class="ordername">
+		<view class="font">
+			{{item.stores}}
+		</view>
+		<view>
+			订单总额
+			<text class="red">￥{{item.orderprice}}</text>
+		</view>
+	</view>
+	<view class="ordertime">
+		<view>
+			{{dateUtil.dateFormat(item.shoplist)}}
+		</view>
+		<view>
+			订单状态:{{status[item.status-1].title}}
+		</view>
+	</view>
+</view>
+

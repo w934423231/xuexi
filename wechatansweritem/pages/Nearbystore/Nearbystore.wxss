@@ -1,0 +1,151 @@
+/* pages/Nearbystore/Nearbystore.wxss */
+page{
+    background-color:rgb(233, 233, 233);
+}
+.text{
+    width:100%;
+    height:60rpx;
+    padding: 0px 20rpx;
+    box-sizing: border-box;
+    background-color:rgb(233, 233, 233);
+    font-size:35rpx;
+    line-height:60rpx;
+    font-family: '黑体'
+}
+.box{
+    width:100%;
+    /* height: 300rpx; */
+    /* background-color: red; */
+}
+.connet-box{
+    width:100%;
+    height:180rpx;
+    background-color: white;
+    padding:0px 20rpx;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.connet-box>view:first-child{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+}
+.connet-box>view:first-child view:first-child{
+    font-size:32rpx;
+    color: black;
+    font-family:'黑体'
+}
+.connet-box>view:first-child view:last-child{
+    font-size:30rpx;
+    color: gray;
+    font-family:'黑体';
+    margin-top:20rpx;
+}
+.connet-box>view:last-child{
+    width:25%;
+    height: 40rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center
+}
+.connet-box>view:last-child view{
+  font-size:30rpx;
+  color:gray;
+  font-family: '黑体'
+}
+.bottom-box{
+    width:100%;
+    height:120rpx;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.bottom-box view{
+    padding:20rpx 40rpx;
+    background-color: orange;
+    color: white;
+    border-radius: 10rpx;
+    font-size:30rpx
+}
+.foot{
+    width:100%;
+    height:200rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0px 20rpx;
+    background-color: #fff;
+    margin-top:20rpx;
+    box-sizing: border-box;
+}
+.foot>view:first-child{
+    width:100%;
+    height:80rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top:15rpx;
+}
+.foot>view:last-child{
+    width:70%;
+    height:80rpx;
+    margin-top:30rpx;
+}
+.sousuo{
+    width:70%;
+    height:80rpx;
+    border:1px solid gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius:10rpx;
+}
+.icon{
+    font-size:50rpx;
+    color: gray;
+    margin-left:10rpx;
+    margin-right:20rpx;
+}
+.font{
+    font-size:30rpx;
+    color: gray;
+
+}
+.buttonsousuo{
+    padding:30rpx 70rpx;
+    background-color:orange;
+    color: white;
+    border-radius:10rpx;
+    font-size:30rpx;
+    font-family: '黑体';
+}
+.pickr{
+    width:100%;
+    height:60rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.pickr>view{
+    width:30%;
+    height:60rpx;
+    border: 1px solid gray;
+    border-radius: 10rpx;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size:30rpx;
+}

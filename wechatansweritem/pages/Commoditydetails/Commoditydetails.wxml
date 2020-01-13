@@ -1,0 +1,210 @@
+<!--pages/Commoditydetails/Commoditydetails.wxml-->
+<wxs module="filters" src="../../utils/filter.wxs" />
+<view class="top">
+	<view>
+		<image class="" src="http://img2.imgtn.bdimg.com/it/u=1117035161,2826823365&fm=26&gp=0.jpg" />
+		<view>
+			<view>
+				{{shopnstork}}
+			</view>
+			<view>
+				门店营业时间：每天08:00-21.30
+			</view>
+		</view>
+	</view>
+	<view>
+		<swiper class="" vertical="{{true}}" autoplay="{{true}}">
+			<swiper-item class="swiperitem" item-id="" catchtouchmove='catchtouchmove'>
+				<view
+				 class=""
+				 selectable="false"
+				 space="false"
+				 decode="false"
+				>
+					<view class="icon red">
+						减
+					</view>
+					<view class="font">
+						遇上新鲜，遇上夏，满55-6元，满65元-10元
+					</view>
+				</view>
+			</swiper-item>
+			<swiper-item class="swiperitem" item-id="" catchtouchmove='catchtouchmove'>
+				<view
+				 class=""
+				 selectable="false"
+				 space="false"
+				 decode="false"
+				>
+
+					<view class="icon orange">
+						券
+					</view>
+					<view class="font">
+						本店支持优惠券
+					</view>
+				</view>
+			</swiper-item>
+			<swiper-item class="swiperitem" item-id="" catchtouchmove='catchtouchmove'>
+				<view
+				 class=""
+				 selectable="false"
+				 space="false"
+				 decode="false"
+				>
+					<view class="icon bulue">
+						付
+					</view>
+					<view class="font">
+						本店支持在店支付
+					</view>
+				</view>
+			</swiper-item>
+		</swiper>
+		<view>
+			﹀
+		</view>
+	</view>
+</view>
+<view class="shopstore">
+	<view>
+		<scroll-view class="" scroll-x="false" scroll-y="true" style="width:100%,height:100%">
+			<view
+			 wx:for="{{navdata}}"
+			 data-index='{{index}}'
+			 wx:for-index="index"
+			 class="{{index==indexnum?'navnamewhite':'navnamegray'}}"
+			 bindtap="navclick"
+			>
+				<view class="navfont">
+					{{item.typename}}
+				</view>
+				<view class="num" wx:if="{{item.num!=0}}">
+					{{item.num}}
+				</view>
+				<view class="num1" wx:if="{{item.num==0}}" />
+			</view>
+		</scroll-view>
+	</view>
+	<view>
+		<scroll-view class="" scroll-x="false" scroll-y="true" style="width:100%,height:100%">
+			<view class="shopdata" wx:for="{{shopdata}}" wx:for-index="index">
+				<image class="" src="{{'http://localhost:8000/updatapics/pics/'+item.shoppics}}" />
+				<view>
+					<view class="shopfont">
+						{{item.shopname}}
+					</view>
+					<view class="">
+						<view>
+							{{item.shopprice}}
+						</view>
+						<view class="" hover-class="none" hover-stop-propagation="false">
+							<view
+							 class="iconfont icon-jianshao iconc"
+							 bindtap='numjia'
+							 data-index='{{index}}'
+							 wx:if="{{item.shopnum!==0}}"
+							/>
+							<view wx:if="{{item.shopnum==0}}" />
+							<view wx:if="{{item.shopnum!==0}}">
+								{{item.shopnum}}
+							</view>
+							<view wx:if="{{item.shopnum==0}}" />
+							<view class="iconfont icon-webicon308 iconc" bindtap="numjian" data-index='{{index}}' />
+						</view>
+					</view>
+				</view>
+			</view>
+		</scroll-view>
+
+	</view>
+</view>
+<view class="coudan {{shoppingboxfalg?'position1':'position2'}}" wx:if="{{coudan}}" bindtap="coudandataclick">
+	还差
+	<text class="coudanred">￥{{shoppingchajia}}</text>
+	可减少{{shoppingactiveprice}}元！ 去凑单>
+</view>
+<view class="foot">
+	<view class="iconfont icon-gouwuche {{Shopping==''? 'icong' : 'icono'}}" bindtap="shoppingclick">
+		<view/>
+	</view>
+	<view class="shopnum" wx:if="{{Shopping!=''}}">
+		<view class="shoppingprice">
+			￥{{shoppingprice}}
+		</view>
+		<view>
+			外卖费￥6
+		</view>
+	</view>
+	<view class="shopnum" wx:if="{{Shopping==''}}">
+		未选择商品
+	</view>
+	<view class="{{Shopping==''?  'zhifug':'zhifuo'}}">
+		<view wx:if="{{Shopping==''}}">
+			￥20元起送
+		</view>
+		<view wx:if="{{Shopping!=''&&shoppingprice<20&&shoppingprice>0}}">
+			差￥{{ filters.toFix(price-shoppingprice)}}起送
+		</view>
+		<view wx:if="{{Shopping!=''&&shoppingprice>=20}}" bindtap="jiesuan">
+			去结算
+		</view>
+	</view>
+</view>
+<view class="shoppingbox" catchtap="shoppingboxcloss" wx:if="{{shoppingboxfalg}}">
+	<view class="shopingmenban" catchtap='null' wx:if="{{shopingmenban}}">
+		<view>
+			<text>已选餐品</text>
+			<view bindtap="clearshopping">
+				清空购物车
+			</view>
+		</view>
+		<view>
+			<scroll-view class="" scroll-x="false" scroll-y="{{true}}" >
+				<view class="shoppingdatashuju" wx:for="{{Shopping}}">
+					<view>
+						{{item.shopname}}
+					</view>
+					<view>
+						￥{{ filters.toFix(item.shopprice*item.shopnum)}}
+					</view>
+					<view>
+						<view class="iconfont icon-jianshao iconc" data-index='{{index}}' bindtap="shoppingjian" />
+
+						<view>
+							{{item.shopnum}}
+						</view>
+
+						<view class="iconfont icon-webicon308 iconc" data-index='{{index}}' bindtap="shoppingjia" />
+					</view>
+				</view>
+			</scroll-view>
+		</view>
+	</view>
+	<view class='coudanshopdata' catchtap='null' wx:if="{{coudandatamenban}}">
+		<view>
+			凑单
+		</view>
+		<view>
+			<scroll-view class="" scroll-x="" scroll-y='true'>
+				<view
+				 class="coudandata"
+				 wx:for="{{coudandata}}"
+				>
+					<view>
+						{{item.shopname}}
+					</view>
+					<view class="coudanprice" hover-class="none" hover-stop-propagation="false">
+						<view class="coudanred">
+							￥{{item.shopprice}}
+						</view>
+						<view class="iconfont icon-webicon308 iconc" data-index='{{index}}' bindtap="coudanjia" >{{item.shopnum}}</view>
+					</view>
+
+				</view>
+			</scroll-view>
+		</view>
+
+	</view>
+</view>
+

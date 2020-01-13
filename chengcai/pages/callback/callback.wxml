@@ -1,0 +1,34 @@
+<view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="请输入查询内容" value="{{SearchData.value}}" bindinput='SearchInput' bindconfirm="SearchConfirm" />
+      <view class="weui-icon-clear" wx:if="{{SearchData.value.length > 0}}" bindtap="SearchClear">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+  </view>
+  <view class="fen">
+  <view class='quan'>
+  <a>
+  <image src='../../img/12.png'></image>
+  <span>全部</span>
+  </a>
+  </view>
+  <scroll-view class="scroll-view_H" scroll-x style="width: 100%" style="white-space:nowrap">
+    <view id="green" class="scroll-view-item_H bc_green">1</view>
+    <view id="red" class="scroll-view-item_H bc_red">2</view>
+    <view id="yellow" class="scroll-view-item_H bc_yellow">3</view>
+    <view id="blue" class="scroll-view-item_H bc_blue">4</view>
+  </scroll-view>
+  </view>
+<view class='shangpin'>
+	<view class='pin'  wx:key="{{index}}" wx:for="{{productlist}}" data-index="{{item.pid}}" bindtap='catechange'>
+		<image class="" src="{{item.pics}}" />
+		<text class="">{{item.showName}}</text>
+	</view>
+</view>
+
+
+
+  
+    

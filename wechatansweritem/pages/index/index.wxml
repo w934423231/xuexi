@@ -1,0 +1,64 @@
+<!-- index.wxml -->
+<view class="banner">
+	<swiper
+	 class="swiper"
+	 indicator-dots="{{true}}"
+	 autoplay="{{true}}"
+	 indicator-color="rgba(255, 255, 255, .3)"
+	 indicator-active-color="white"
+	>
+		<view wx:for="{{banner}}">
+			<swiper-item class="" item-id="">
+				<image
+				 class=""
+				 src="{{item.url}}"
+				 lazy-load="false"
+				 binderror=""
+				 bindload=""
+				/>
+			</swiper-item>
+		</view>
+	</swiper>
+	<view class="currentLocation">
+		<view class="relocation">
+			<view class="iconfont icon-dingwei dingwei" bindtap="dingwei"></view>
+		</view>
+		<view class="currentLocations">
+			<view class="iconfont icon-chazhao .chazhao" />
+			<view class="currentfont">
+				{{indexaddress[0].regeocodeData.formatted_address}}
+			</view>
+		</view>
+	</view>
+</view>
+<view class="reservation">
+	<view bindtap="diancansystem">
+		<view class="iconfont icon-icon-test icon-test" />
+		<view>
+			外卖点餐
+		</view>
+	</view>
+	<view>
+		<view class="iconfont icon-yiliaohangyedeICON- icon-test" />
+		<view>
+			到店点餐
+		</view>
+	</view>
+</view>
+<view class="main">
+	<view>
+		<image src="/pages/image/index/waimaidiancan.png" />
+	</view>
+	<view>
+		<view>
+			<image src="/pages/image/index/meishituijian.png" />
+		</view>
+		<view>
+			<image src="/pages/image/index/weixinyouhuiquan.png" />
+		</view>
+	</view>
+</view>
+<view class="dailydiscount">
+	<image  src="/pages/image/index/meiyueyouhui.png" /> 
+</view>
+

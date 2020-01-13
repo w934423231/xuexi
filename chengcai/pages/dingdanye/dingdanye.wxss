@@ -1,0 +1,60 @@
+/* pages/dingdanye/dingdanye.wxss */
+.top{
+    width:100VW;
+    height:5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+}
+.top view{
+    padding-bottom: 20px;
+    
+    font-size: 13px;
+}
+.red{
+border-bottom: 2px solid red;
+}
+.body{
+width: 100vw;
+height:83vh;
+margin-top: 7vh;
+background-color:#c0c0c0;
+}
+.box{
+    width:95vw;
+    height:25vh;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box
+}
+.image{
+    width: 100px;
+    height: 100px;
+    border-radius:5px;
+    margin-left: 10px;
+}
+.font{
+    width: 50vw;
+    height:20vh;
+    margin-left:10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    
+}
+.jiage{
+    width: 50vw;
+    height:5vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+   
+}
+.qian{
+    /* width:80px; */
+}

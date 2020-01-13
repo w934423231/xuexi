@@ -1,0 +1,13 @@
+<!--pages/usermassage/usermassage.wxml-->
+<view class="userimage">
+    <image class="" src="{{userdata.userimage}}" />
+</view>
+<view class="usermassage">
+    手机号:{{userdata.useriphone}}
+</view>
+<view class="usermassage">
+    用户昵称:{{userdata.username}}
+</view>
+<view class="usermassage">
+    性别:{{userdata.userGender}}
+</view>

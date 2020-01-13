@@ -1,0 +1,124 @@
+
+<scroll-view scroll-x class='catelist' scroll-into-view="{{catecroll}}">
+	<block>
+		<view  wx:for="{{cateList}}" wx:key="{{index}}" class='cateitem {{idx===index?"active":""}}'
+		 bindtap='catechange'
+		 data-idx="{{index}}"
+		>{{item.catename}}
+		</view>
+	</block>
+</scroll-view>
+<view class='banner'>
+	<swiper autoplay="false" interval="2000" duration="500">
+		<block wx:for="{{imgUrls}}">
+			<swiper-item>
+				<image src="{{item}}" class="slide-image" />
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+<view class='biaoyu'>
+	<view class='nav-t' wx:for='{{titlel}}'>
+		<image src='../../img/check-circle.png' />
+		{{item}}
+	</view>
+</view>
+<view class="main1">
+	<view wx:for='{{fenleibiao}}' class="fenleibiao">
+		<view class="imgcal">
+			<image src="{{item.imgsrc}}" />
+		</view>
+		<view class="titcal">{{item.title}}</view>
+	</view>
+</view>
+<view class="main2">
+	<view class='msg_01'>
+    <text>新人福利</text>
+    <text>更多></text>
+  </view>
+	<view class="newlibao">
+		<view wx:for="{{newpeoper}}" style="{{item}}" />
+	</view>
+</view>
+<view class='status'>
+  <view class='status_01'>
+    <text>省钱方案</text>
+  </view>
+  <scroll-view scroll-x class='status_02' upper-threshold='upper' lower-threshold='lower' style='white-space: nowrap;'>
+    <view wx:for="{{status}}">
+      <image src='{{item.img}}'></image>
+      <text>{{item.name}}</text>
+    </view>
+  </scroll-view>
+</view>
+
+<view class='eee'></view>
+
+<view class='msg'>
+  <view class='msg_01'>
+    <text>新人惊喜见面礼</text>
+    <text>更多></text>
+  </view>
+  <view class='msg_02'>
+    <image src='images/banner1.png'></image>
+  </view>
+  <scroll-view scroll-x class='msg_03' upper-threshold='upper' lower-threshold='lower' style='white-space: nowrap;'>
+    <view wx:for="{{msg}}">
+      <image src='{{item.img}}'></image>
+      <text>{{item.name}}</text>
+    </view>
+  </scroll-view>
+</view>
+
+<view class='eee'></view>
+
+<view class='msg'>
+  <view class='msg_01'>
+    <text>为她“智”造幸福</text>
+    <text>更多></text>
+  </view>
+  <view class='msg_02'>
+    <image src='images/banner1.png'></image>
+  </view>
+  <scroll-view scroll-x class='msg_03' upper-threshold='upper' lower-threshold='lower' style='white-space: nowrap;'>
+    <view wx:for="{{happiness}}">
+      <image src='{{item.img}}'></image>
+      <text>{{item.name}}</text>
+    </view>
+  </scroll-view>
+</view>
+
+<view class='eee'></view>
+
+<view class='msg'>
+  <view class='msg_01'>
+    <text>每日必逛</text>
+    <text>更多></text>
+  </view>
+  <view class='msg_02'>
+    <image src='images/banner1.png'></image>
+  </view>
+  <scroll-view scroll-x class='msg_03' upper-threshold='upper' lower-threshold='lower' style='white-space: nowrap;'>
+    <view wx:for="{{everyday}}">
+      <image src='{{item.img}}'></image>
+      <text>{{item.name}}</text>
+    </view>
+  </scroll-view>
+</view>
+
+<view class='eee'></view>
+
+<view class='brand'>
+  <view class='msg_01'>
+    <text>品牌馆</text>
+    <text>更多></text>
+  </view>
+  <view class='brand_02'>
+    <view wx:for="{{brand}}">
+      <image src='{{item.img}}'></image>
+    </view>
+  </view>
+</view>
+<view class='return' hidden='{{!floorstatus}}' bindtap="goTop"></view>
+
+

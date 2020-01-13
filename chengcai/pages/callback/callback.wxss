@@ -1,0 +1,146 @@
+.weui-icon-search {
+  margin-right: 8px;
+  font-size: inherit;
+}
+
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.weui-search-bar__form {
+  width: 95vw;  
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+  background: #fff;
+  border: 1rpx solid #e6e6ea;
+  margin: 0px auto;
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.weui-icon-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 8px;
+  font-size: 0;
+}
+.weui-search-bar__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 3px;
+  text-align: center;
+  color: #9b9b9b;
+  background: #fff;
+  line-height: 28px;
+}
+.weui-search-bar__cancel-btn {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #DC3C24;
+  white-space: nowrap;
+}  .fen{
+      width:100%;
+      height:234.375rpx;
+      margin-top: 30px;
+      /* background:blue; */
+    }
+    .quan{
+      width:60px;
+      height:60px;
+      /* border:1px solid pink; */
+    }
+    .quan a image{
+        width:30px;
+        height:30px;
+        margin-left:15px;
+    }
+    .quan a span{
+      font-size:12px;
+      margin:5px 16px;
+    }
+    .scroll-view_H{
+  width: 80vw;
+  height:234.375rpx;
+  margin-top:-61px;
+  margin-left:58px;
+}
+.scroll-view-item_H{
+  display: inline-block;
+}
+.bc_green{
+  width:30%;
+  height:90px;
+  background:green;
+  margin-left:5px;
+}
+.bc_red{
+  width:30%;
+  height:90px;
+  background:red;
+  margin-left:5px;
+}
+.bc_yellow{
+  width:30%;
+  height:90px;
+  background:yellow;
+  margin-left:5px;
+}
+.bc_blue{
+  width:30%;
+  height:90px;
+  background:blue;
+  margin-left:5px;
+}
+.scroll-view_H image{
+width:30%;
+  height:90px;
+}
+.pin{
+  display: inline-block;
+  width:46vw;
+  height:375rpx;
+  border:1px solid red;
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+}
+.pin image{
+  width:50%;
+  height:60px;
+}
+.pin text{
+  font-size:16px;
+  float:left;
+}
+.shangpin{
+  width:100%;
+  background:white;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}

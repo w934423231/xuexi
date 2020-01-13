@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    // function test(){
+    //     console.log(1)
+    // }
+    // test()
+    // var test=function(){
+    //     console.log(1)
+    // }
+    // var test=function(){
+    //     console.log(2)
+    // }
+    // var test=function(num){
+    //     console.log(num)
+    // }
+    // var test=function(){
+    //     console.log(arguments[0])
+    // }
+    // test(4)
+
+
+    //     function dome (){
+    //         return function(){
+    //             return 2
+    //         }
+    //     }
+    //    console.log(dome()())
+    // var str='sdj5133sadd54621'
+    // var b=str.split('')
+    // // console.log(b)
+    //     function name (str){
+    //         var arr=[]
+    //         for(var i=0;i<str.length;i++){
+    //             if(!isNaN(str[i])){
+    //                 arr.push(str[i])
+    //             }
+    //         }
+    //         return arr
+    //     }
+    //    console.log(name(str))
+    // function Foo(){
+    //     getName=function(){
+    //         console.log(1)
+    //     }
+    //     return this;
+    // }
+    // Foo.getName=function(){
+    //     console.log(2)
+    // }
+    // Foo.prototype.getName=function(){
+    //     console.log(3);
+
+    // }
+    // var getName=function(){
+    //     console.log(4);
+
+    // }
+    // function getName(){
+    //     console.log(5)
+    // }
+    // Foo.getName();//2
+    // getName();//4
+    // Foo().getName()//1
+    // getName()//1
+    // new Foo.getName()//2
+    // new Foo().getName()//3
+    // new new Foo().getName()//3
+    // let funcs=[]
+    // for(let i=0;i<10;i++){
+    //     // console.log(i)
+    //     funcs.push(function(){
+    //         // console.log(i)
+    //         return i;})
+    // }
+    // funcs.forEach(function(func){
+    //     console.log(func())
+    // })
+    //     function dep(a,i){console.log(a)
+    //         if (i<=50){
+    //             return dep(a + a * 0.05,++i);
+    //         }
+    //         return a;
+    //     }
+    //    console.log( dep(10000,1));
+    // function time(num, houer, a) {
+    //     if (houer <= a) {
+    //         if (houer <3) {
+    //             return time(num * 2, ++houer, a)
+    //         } else {
+    //             console.log((houer-3)*2)
+    //             return time((num * 2) - (houer-3)*2, ++houer, a)
+    //         }
+    //     } else {
+    //         return num
+    //     }
+    // }
+
+    // console.log(time(1, 1, 3))
+    // var x=1,y=z=0;
+    // function add(n){
+    //     return n=n+1
+    // }
+    // y=add(x)
+    // console.log(x,y,z)
+    // function add(n){
+    //     return n=n+3
+    // }
+    // z=add(x)
+    // console.log(x,y,z)
+    // var girlfriend={
+    //     name:'hanmeimei',
+    //     sex:'女',
+    //     height:'180',
+    //     techang:function(){
+    //         console.log('跟他妈谁俩呢')
+    //     }
+    // }
+    // console.log(girlfriend)
+    // function SuperType(){
+    //     this.property=true;
+    // }
+    // SuperType.prototype.getSuperVaule=function(){
+    //     return this.property;
+    // }
+    // function SubType(){
+    //     this.subproperty=false
+    // }
+    // SubType.prototype=new SuperType()
+    // SubType.prototype.getSubValue=function(){
+    //     return this.subproperty
+    // }
+    // var instance=new SubType();
+    // console.log(instance.getSuperVaule())
+    // var num=10
+    // var n=0
+    // function fn(num,n){
+    //    console.log(num,n)
+    //    if(n>19){
+    //        return num
+    //    }
+    //    if(n>=10){
+    //     fn(++num,++n)
+    //    }else{
+    //      fn(--num,++n)
+    //    }
+
+    // }
+    // fn(num,n)
+    
+    // function fn(num, n, start) {
+    //     console.log(num)
+    //     if (num == start && n == false) {
+    //         return false
+    //     }
+    //     if (num == 0) {
+    //         return fn(++num, false, start)
+    //     }
+    //     if (n) {
+    //         return fn(--num, n, start)
+    //     } else {
+    //         return fn(++num, n, start)
+    //     }
+    // }
+    // fn(10, true, 10)
+    function fn(n){
+        n--
+        console.log(n)
+        if(n>0){
+            fn(n) 
+        }
+        console.log(n)
+    }
+    fn(11)
+</script>

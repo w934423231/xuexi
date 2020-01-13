@@ -1,0 +1,17 @@
+/* pages/anzhuang/anzhuang.wxss */
+.top{
+    width:100VW;
+    height:5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+}
+.top view{
+    padding-bottom: 20px;
+    
+    font-size: 13px;
+}
+.red{
+border-bottom: 2px solid red;
+}

@@ -1,0 +1,127 @@
+
+page{
+  background-color:rgba(0, 0, 0, 0.034);
+}
+.banner{
+  width:100vw;
+  height:400rpx
+}
+.swiper{
+  width:100%;
+  height:400rpx;
+}
+.swiper image{
+  width:100%;
+}
+.currentLocation{
+  width:90%;
+  height:80rpx;
+  position: absolute;
+  top: 10rpx;
+  display: flex;
+  justify-content:space-between;
+  left:5%;
+}
+.relocation{
+  width:80rpx;
+  height:80rpx;
+  background:rgba(0, 0, 0, 0.6);
+  border-radius:10%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.currentLocations{
+  width:570rpx;
+  height:80rpx;
+  background:rgba(0, 0, 0, 0.6);
+  border-radius:10rpx;
+  display: flex;
+  align-items: center
+}
+.dingwei{
+  color:white;
+  font-size:60rpx
+}
+
+.chazhao{
+  color: gray;
+  font-size:55rpx;
+  margin: 0px 10rpx;
+}
+
+.currentfont{
+  color: white;
+  font-family:"黑体";
+  font-size: 28rpx;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.reservation {
+  width:100%;
+  height:120rpx;
+  background:white;
+  margin-top:20rpx;
+  border-top:1px solid rgb(172, 170, 170);
+  border-bottom:1px solid rgb(172, 170, 170);
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.reservation>view{
+  width:50%;
+  height:120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reservation>view:first-child{
+  border-right: 1px solid rgb(172, 170, 170);
+  box-sizing: border-box;
+}
+.icon-test{
+  font-size: 60rpx;
+  color: rgb(255, 157, 0);
+  margin-right: 15rpx;
+}
+.main{
+  width:100%;
+  height:350rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+  padding:0px 20rpx;
+  box-sizing: border-box;
+  margin-top:15rpx;
+}
+.main>view{
+  width:48.5%;
+  height:350rpx;
+}
+.main view image{
+    width: 100%;
+    height:100%;
+}
+.main>view:last-child{
+  width:48.5%;
+  height:350rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+.main>view:last-child>view{
+  width:100%;
+  height:165rpx;
+}
+.dailydiscount{
+  width: 100%;
+  height:350rpx;
+  margin-top:15rpx;
+}
+.dailydiscount image{
+  width: 100%;
+  height:100%;
+}

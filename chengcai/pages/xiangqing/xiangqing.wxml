@@ -1,0 +1,119 @@
+<view class='{{menban?"body":" "}}'>
+	<view class='banner'>
+		<swiper
+		 indicator-dots="{{indicatorDots}}"
+		 autoplay="{{autoplay}}"
+		 interval="{{interval}}"
+		 duration="{{duration}}"
+		>
+			<block wx:for="{{imgUrls}}">
+				<swiper-item>
+					<image src="{{item.pics}}" class="slide-image" />
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+<view class='menu'>
+  <text class='text1'>{{imgUrls[0].showName}}</text>
+  <text class='text2'>￥{{imgUrls[0].price}}</text>
+  <view>
+    <text>市场参考价:￥{{imgUrls[0].price}}</text>
+    <text>电商参考价:￥{{imgUrls[0].price}}</text>
+    <text>*计算单位：个</text>
+  </view>
+</view>
+<view class='eee'></view>
+<view class='choice' bindtap='showAttrSelect'>
+  <text>请选择规格</text>
+  <text>></text>
+</view>
+
+<view class='eee'></view>
+
+<view class='service'>
+  <view class='service_01'>
+    <text>服务保障</text>
+    <text>></text>
+  </view>
+  <view class='service_02'>
+    <image src='/img/12.png'></image>
+  </view>
+</view>
+	<view class="swiper-tab">
+		<view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">商品详情</view>
+		<view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">规格参数</view>
+		<view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">售后说明</view>
+	</view>
+
+	<swiper
+	 class="swipera"
+	 current="{{currentTab}}"
+	 duration="300"
+	 bindchange="swiperTab"
+	>
+		<swiper-item>
+			<view>商品详情</view>
+		</swiper-item>
+		<swiper-item>
+			<view>规格参数</view>
+		</swiper-item>
+		<swiper-item>
+			<view>售后说明</view>
+		</swiper-item>
+	</swiper>
+	<view class='footer'>
+		<view class='footer_01'>
+			<view wx:for="{{footer}}">
+				<image src='{{item.img}}' />
+			</view>
+		</view>
+		<view class='footer_02'>
+			<view wx:for="{{foo}}" bindtap='open' data-name="{{item.name}}">{{item.name}}</view>
+		</view>
+	</view>
+</view>
+<view class="{{menban?'menban':'menbans'}}" catchtouchmove='true'>
+	<scroll-view class="box" scroll-y="true">
+		<view class="guanbi" bindtap='guanbi'>×</view>
+		<view class="boxtop">
+			<image src="{{imgUrls[0].pics}}" />
+			<view>
+				<text>单价：{{imgUrls[0].price}}</text>
+				<text>{{imgUrls[0].showName}}</text>
+			</view>
+		</view>
+		<!-- <view class="fonts">可选</view>
+		<view class="leixing">
+			<view
+			 wx:key="{{index}}"
+			 wx:for="{{attributes[0].attributes}}"
+			 class='{{item.check?"border":""}}'
+			 bindtap='dianji'
+			 data-index='{{index}}'
+			>{{item.value}}
+			</view>
+		</view>
+		<view class="fonts">可选*</view>
+		<view class="leixing">
+			<view
+			 wx:key="{{index}}"
+			 wx:for="{{attributes[1].attributes}}"
+			 class='{{item.check?"border":""}}'
+			 bindtap='dianji1'
+			 data-index='{{index}}'
+			>{{item.value}}
+			</view>
+		</view> -->
+		<view class="font">可选*</view>
+		<van-stepper
+		 value="{{ num }}"
+		 integer
+		 min="1"
+		 max="40"
+		 bind:change="change"
+		 custom-class='strpper'
+		/>
+	</scroll-view>
+	
+</view>
+

@@ -1,0 +1,3 @@
+<view class="top">
+    <view wx:for="{{shuju}}" class="{{item.check?'red':''}}" data-index="{{index}}" bindtap='dingdanye'>{{item.names}}</view>
+</view>

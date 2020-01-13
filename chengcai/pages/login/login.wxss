@@ -1,0 +1,33 @@
+page{
+    height:100%;
+    display:flex;
+    justify-content: center;
+}
+page>.box{
+    margin-top:200rpx;
+    width:85%;
+    padding:10px;
+}
+.box view{
+    height:100rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.box view input{
+    height:80rpx;
+    border-radius:20rpx;
+    border:1px solid black;
+    padding-left: 20rpx;
+    box-sizing:border-box;
+}
+.box view:nth-of-type(3){
+    margin-top:100rpx;
+}
+.but{
+    background-color:rgb(99, 171, 253);
+    padding:0px 80rpx;
+    color: white;
+}
